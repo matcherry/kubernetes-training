@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: development
+  namespace: development  
+  labels:
+    image: development01
+spec: 
+  containers:
+    - name: development01
+      image: nginx

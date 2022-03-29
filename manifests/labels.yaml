@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: ops-pod
+ labels:
+   environment: operations
+   team: ops01
+spec:
+ containers:
+   - name: ops01
+     image: "Ubuntu"
+     resources:
+       limits:
+        cpu: 1
