@@ -1,10 +1,20 @@
 # Kubernetes (k8s)
 
+[****Monitor Node Health****](https://www.notion.so/Monitor-Node-Health-97ed8c538cbc4dc3b6673bea943c2a79)
+
+[Pods](https://www.notion.so/Pods-9ae98cbfd4eb434380dfbe5e9458940b)
+
+[Deployment | Jobs](https://www.notion.so/Deployment-Jobs-f121d36c6d5f48aa890627d25b7555b8)
+
 course :
 
 [Learn Kubernetes using Interactive Browser-Based Labs | Katacoda](https://www.katacoda.com/courses/kubernetes/)
 
+[Kubernetes using Interactive Browser-Based Labs | Katacoda](https://www.katacoda.com/contino/courses/kubernetes)
+
 [Play with Kubernetes](https://labs.play-with-k8s.com/)
+
+[Introduction to Kubernetes](https://www.edx.org/course/introduction-to-kubernetes)
 
 [Học kubenetes](https://thanhtungvo.medium.com/h%E1%BB%8Dc-kubenetes-694024d1e5e1)
 
@@ -17,6 +27,10 @@ course :
 [GitHub - prabhatsharma/kubernetes-the-hard-way-aws: AWS version of Kelsey's kubernetes-the-hard-way](https://github.com/prabhatsharma/kubernetes-the-hard-way-aws)
 
 [10+ Useful Kubernetes Tools](https://faun.pub/10-useful-kubernetes-tools-ddffa62089cc)
+
+[Kubernetes Installation and Configuration Fundamentals](https://app.pluralsight.com/library/courses/kubernetes-installation-configuration-fundamentals/discussion)
+
+[](https://www.youtube.com/playlist?list=PL-CtdCApEFH8XrWyQAyRd6d_CKwxD8Ime)
 
 # Introduction
 
@@ -79,9 +93,20 @@ Consider using one of the [client libraries](https://kubernetes.io/docs/referen
 
 *Kubernetes objects* are persistent entities in the Kubernetes system. Kubernetes uses these entities to represent the state of your cluster. Specifically, they can describe:
 
+[Understanding Kubernetes Objects](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/)
+
 - What containerized applications are running (and on which nodes)
 - The resources available to those applications
 - The policies around how those applications behave, such as restart policies, upgrades, and fault-tolerance
+
+### **Required Fields**
+
+In the `.yaml` file for the Kubernetes object you want to create, you'll need to set values for the following fields:
+
+- `apiVersion` - Which version of the Kubernetes API you're using to create this object
+- `kind` - What kind of object you want to create
+- `metadata` - Data that helps uniquely identify the object, including a `name` string, `UID`, and optional `namespace`
+- `spec` - What state you desire for the object
 
 # Kubernetes Architecture : Made up of
 
@@ -98,6 +123,8 @@ Consider using one of the [client libraries](https://kubernetes.io/docs/referen
 [https://www.youtube.com/watch?v=xjpHggHKm78](https://www.youtube.com/watch?v=xjpHggHKm78)
 
 [Kubernetes requests vs limits: Why adding them to your Pods and Namespaces matters | Google Cloud Blog](https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-best-practices-resource-requests-and-limits)
+
+[Understanding Kubernetes Resource (CPU and Memory) Units](https://medium.com/swlh/understanding-kubernetes-resource-cpu-and-memory-units-30284b3cc866)
 
 A resource is **an endpoint in the Kubernetes API that stores a collection of API objects of a certain kind**; for example, the built-in pods resource contains a collection of Pod objects. A custom resource is an extension of the Kubernetes API that is not necessarily available in a default Kubernetes installation.
 
@@ -155,3 +182,13 @@ Many useful information can be found [here](https://www.replex.io/blog/kubernet
 [Kubernetes Best Practices](https://www.youtube.com/playlist?list=PLIivdWyY5sqL3xfXz5xJvwzFW_tlQB_GB)
 
 [Configuration Best Practices](https://kubernetes.io/docs/concepts/configuration/overview/)
+
+[Kubernetes production best practices](https://learnk8s.io/production-best-practices)
+
+[GitHub - diegolnasc/kubernetes-best-practices: A cookbook with the best practices to working with kubernetes.](https://github.com/diegolnasc/kubernetes-best-practices#kubernetes-best-practices-101)
+
+[Best practices | Kubernetes Engine Documentation | Google Cloud](https://cloud.google.com/kubernetes-engine/docs/best-practices)
+
+ReplicaController | ReplicaSet
+Deployments
+Jobs | InitContainers
