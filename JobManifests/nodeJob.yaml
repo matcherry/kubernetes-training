@@ -7,6 +7,6 @@ spec:
     spec:
       containers:
       - name: node-app-job
-        image: alpine   #your docker image
+        image: alpine   
         command: ["echo", "Welcome to my Node app"]
       restartPolicy: Never

@@ -3,9 +3,8 @@ kind: Job
 metadata:
   name: simple-job
 spec:
-  completions: 5
+  completions: 3
   parallelism: 2
-  ttlSecondsAfterFinished: 1
   template:
     spec:
       containers:

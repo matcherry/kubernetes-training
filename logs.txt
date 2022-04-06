@@ -1,0 +1,2911 @@
+* 
+* ==> Audit <==
+* |---------|-----------------------|----------|---------------------|---------|-------------------------------|-------------------------------|
+| Command |         Args          | Profile  |        User         | Version |          Start Time           |           End Time            |
+|---------|-----------------------|----------|---------------------|---------|-------------------------------|-------------------------------|
+| start   | --wait=false          | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 24 Mar 2022 09:51:02 WIB | Thu, 24 Mar 2022 09:52:45 WIB |
+| addons  | enable metrics-server | minikube | rismanda.kusumadewi | v1.25.2 | Fri, 25 Mar 2022 13:33:07 WIB | Fri, 25 Mar 2022 13:33:08 WIB |
+| start   |                       | minikube | rismanda.kusumadewi | v1.25.2 | Mon, 28 Mar 2022 06:28:20 WIB | Mon, 28 Mar 2022 06:28:47 WIB |
+| service | hello-node            | minikube | rismanda.kusumadewi | v1.25.2 | Mon, 28 Mar 2022 11:16:56 WIB | Mon, 28 Mar 2022 11:16:57 WIB |
+| service | hello-node            | minikube | rismanda.kusumadewi | v1.25.2 | Mon, 28 Mar 2022 11:18:03 WIB | Mon, 28 Mar 2022 11:18:04 WIB |
+| addons  | list                  | minikube | rismanda.kusumadewi | v1.25.2 | Mon, 28 Mar 2022 11:18:39 WIB | Mon, 28 Mar 2022 11:18:42 WIB |
+| start   |                       | minikube | rismanda.kusumadewi | v1.25.2 | Wed, 30 Mar 2022 20:54:17 WIB | Wed, 30 Mar 2022 20:55:01 WIB |
+| service | nodejs-web-service    | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 08:12:45 WIB | Thu, 31 Mar 2022 08:12:53 WIB |
+| start   |                       | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 08:14:39 WIB | Thu, 31 Mar 2022 08:15:34 WIB |
+| service | nodejs-web-service    | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 08:16:53 WIB | Thu, 31 Mar 2022 08:16:56 WIB |
+| service | nodejs-web-service    | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 08:16:58 WIB | Thu, 31 Mar 2022 08:17:02 WIB |
+| service | nodejs-web-service    | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 08:17:22 WIB | Thu, 31 Mar 2022 08:17:25 WIB |
+| service | nodejs-web-service    | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 08:17:39 WIB | Thu, 31 Mar 2022 08:17:43 WIB |
+| service | nodejs-web-service    | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 08:32:08 WIB | Thu, 31 Mar 2022 08:32:10 WIB |
+| service | nodejs-web-service    | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 08:38:36 WIB | Thu, 31 Mar 2022 08:38:38 WIB |
+| service | nginx-service         | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 08:57:03 WIB | Thu, 31 Mar 2022 08:57:06 WIB |
+| service | nginx-service         | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 09:22:05 WIB | Thu, 31 Mar 2022 09:22:07 WIB |
+| service | nginx-service         | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 09:32:19 WIB | Thu, 31 Mar 2022 09:32:21 WIB |
+| service | help                  | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 09:36:05 WIB | Thu, 31 Mar 2022 09:36:09 WIB |
+| service | list                  | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 09:36:27 WIB | Thu, 31 Mar 2022 09:36:31 WIB |
+| addons  | list                  | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 10:50:11 WIB | Thu, 31 Mar 2022 10:50:13 WIB |
+| addons  | enable ingress        | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 10:50:22 WIB | Thu, 31 Mar 2022 10:54:28 WIB |
+| addons  | list                  | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 11:11:14 WIB | Thu, 31 Mar 2022 11:11:16 WIB |
+| start   |                       | minikube | rismanda.kusumadewi | v1.25.2 | Thu, 31 Mar 2022 20:59:01 WIB | Thu, 31 Mar 2022 21:06:39 WIB |
+| tunnel  |                       | minikube | rismanda.kusumadewi | v1.25.2 | Fri, 01 Apr 2022 07:20:40 WIB | Fri, 01 Apr 2022 07:22:17 WIB |
+| tunnel  |                       | minikube | rismanda.kusumadewi | v1.25.2 | Fri, 01 Apr 2022 07:23:53 WIB | Fri, 01 Apr 2022 07:27:41 WIB |
+| tunnel  |                       | minikube | rismanda.kusumadewi | v1.25.2 | Fri, 01 Apr 2022 07:29:08 WIB | Fri, 01 Apr 2022 07:29:56 WIB |
+| ssh     |                       | minikube | rismanda.kusumadewi | v1.25.2 | Fri, 01 Apr 2022 11:37:15 WIB | Fri, 01 Apr 2022 12:23:28 WIB |
+| start   |                       | minikube | rismanda.kusumadewi | v1.25.2 | Mon, 04 Apr 2022 07:17:20 WIB | Mon, 04 Apr 2022 07:20:34 WIB |
+| start   |                       | minikube | rismanda.kusumadewi | v1.25.2 | Mon, 04 Apr 2022 20:58:16 WIB | Mon, 04 Apr 2022 21:02:06 WIB |
+| start   |                       | minikube | rismanda.kusumadewi | v1.25.2 | Mon, 04 Apr 2022 21:10:08 WIB | Mon, 04 Apr 2022 21:13:56 WIB |
+| stop    |                       | minikube | rismanda.kusumadewi | v1.25.2 | Mon, 04 Apr 2022 21:23:13 WIB | Mon, 04 Apr 2022 21:25:02 WIB |
+| start   |                       | minikube | rismanda.kusumadewi | v1.25.2 | Mon, 04 Apr 2022 21:27:13 WIB | Mon, 04 Apr 2022 21:28:18 WIB |
+| service | list                  | minikube | rismanda.kusumadewi | v1.25.2 | Mon, 04 Apr 2022 21:30:27 WIB | Mon, 04 Apr 2022 21:30:45 WIB |
+|---------|-----------------------|----------|---------------------|---------|-------------------------------|-------------------------------|
+
+* 
+* ==> Last Start <==
+* Log file created at: 2022/04/04 21:34:59
+Running on machine: 192
+Binary: Built with gc go1.17.6 for darwin/amd64
+Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
+I0404 21:34:59.569485   64779 out.go:297] Setting OutFile to fd 1 ...
+I0404 21:34:59.570088   64779 out.go:349] isatty.IsTerminal(1) = true
+I0404 21:34:59.570095   64779 out.go:310] Setting ErrFile to fd 2...
+I0404 21:34:59.570105   64779 out.go:349] isatty.IsTerminal(2) = true
+I0404 21:34:59.570592   64779 root.go:315] Updating PATH: /Users/rismanda.kusumadewi/.minikube/bin
+W0404 21:34:59.570849   64779 root.go:293] Error reading config file at /Users/rismanda.kusumadewi/.minikube/config/config.json: open /Users/rismanda.kusumadewi/.minikube/config/config.json: no such file or directory
+I0404 21:34:59.571921   64779 out.go:304] Setting JSON to false
+I0404 21:34:59.620805   64779 start.go:112] hostinfo: {"hostname":"192.168.1.6","uptime":992860,"bootTime":1648090039,"procs":290,"os":"darwin","platform":"darwin","platformFamily":"Standalone Workstation","platformVersion":"11.6.2","kernelVersion":"20.6.0","kernelArch":"x86_64","virtualizationSystem":"","virtualizationRole":"","hostId":"5fa61991-2043-5068-b532-f70af3329957"}
+W0404 21:34:59.621193   64779 start.go:120] gopshost.Virtualization returned error: not implemented yet
+I0404 21:34:59.679017   64779 out.go:176] 😄  minikube v1.25.2 on Darwin 11.6.2
+I0404 21:34:59.683744   64779 notify.go:193] Checking for updates...
+I0404 21:34:59.685534   64779 config.go:176] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.23.3
+I0404 21:34:59.686171   64779 driver.go:344] Setting default libvirt URI to qemu:///system
+I0404 21:34:59.816565   64779 virtualbox.go:136] virtual box version: 6.1.28r147628
+I0404 21:34:59.847054   64779 out.go:176] ✨  Using the virtualbox driver based on existing profile
+I0404 21:34:59.847250   64779 start.go:281] selected driver: virtualbox
+I0404 21:34:59.847262   64779 start.go:798] validating driver "virtualbox" against &{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.25.2.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.30@sha256:02c921df998f95e849058af14de7045efc3954d90320967418a0d1f182bbc0b2 Memory:2200 CPUs:2 DiskSize:20000 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.23.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin: FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: ExtraOptions:[{Component:kubelet Key:housekeeping-interval Value:5m}] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.59.100 Port:8443 KubernetesVersion:v1.23.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[ambassador:false auto-pause:false csi-hostpath-driver:false dashboard:true default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false helm-tiller:false ingress:true ingress-dns:false istio:false istio-provisioner:false kong:false kubevirt:false logviewer:false metallb:false metrics-server:true nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false portainer:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false volumesnapshots:false] CustomAddonImages:map[IngressController:ingress-nginx/controller:v1.1.1@sha256:0bc88eb15f9e7f84e8e56c14fa5735aaa488b840983f87bd79b1054190e660de KubeWebhookCertgenCreate:k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1@sha256:64d8c73dca984af206adf9d6d7e46aa550362b1d7a01f3a0a91b20cc67868660 KubeWebhookCertgenPatch:k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1@sha256:64d8c73dca984af206adf9d6d7e46aa550362b1d7a01f3a0a91b20cc67868660 MetricsServer:metrics-server/metrics-server:v0.4.2@sha256:dbc33d7d35d2a9cc5ab402005aa7a0d13be6192f3550c7d42cba8d2d5e3a5d62] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:false apps_running:false default_sa:false extra:false kubelet:false node_ready:false system_pods:false] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/Users:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false}
+I0404 21:34:59.848307   64779 start.go:809] status for virtualbox: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:6.1.28r147628
+}
+I0404 21:34:59.848746   64779 cni.go:93] Creating CNI manager for ""
+I0404 21:34:59.850517   64779 cni.go:167] CNI unnecessary in this configuration, recommending no CNI
+I0404 21:34:59.850544   64779 start_flags.go:302] config:
+{Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.25.2.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.30@sha256:02c921df998f95e849058af14de7045efc3954d90320967418a0d1f182bbc0b2 Memory:2200 CPUs:2 DiskSize:20000 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.23.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin: FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: ExtraOptions:[{Component:kubelet Key:housekeeping-interval Value:5m}] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.59.100 Port:8443 KubernetesVersion:v1.23.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[ambassador:false auto-pause:false csi-hostpath-driver:false dashboard:true default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false helm-tiller:false ingress:true ingress-dns:false istio:false istio-provisioner:false kong:false kubevirt:false logviewer:false metallb:false metrics-server:true nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false portainer:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false volumesnapshots:false] CustomAddonImages:map[IngressController:ingress-nginx/controller:v1.1.1@sha256:0bc88eb15f9e7f84e8e56c14fa5735aaa488b840983f87bd79b1054190e660de KubeWebhookCertgenCreate:k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1@sha256:64d8c73dca984af206adf9d6d7e46aa550362b1d7a01f3a0a91b20cc67868660 KubeWebhookCertgenPatch:k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1@sha256:64d8c73dca984af206adf9d6d7e46aa550362b1d7a01f3a0a91b20cc67868660 MetricsServer:metrics-server/metrics-server:v0.4.2@sha256:dbc33d7d35d2a9cc5ab402005aa7a0d13be6192f3550c7d42cba8d2d5e3a5d62] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:false apps_running:false default_sa:false extra:false kubelet:false node_ready:false system_pods:false] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/Users:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false}
+I0404 21:34:59.850777   64779 iso.go:123] acquiring lock: {Name:mkcfa6fb8d6a2995f763944ba407a1f0598743a2 Clock:{} Delay:500ms Timeout:10m0s Cancel:<nil>}
+I0404 21:34:59.993237   64779 out.go:176] 👍  Starting control plane node minikube in cluster minikube
+I0404 21:34:59.993282   64779 preload.go:132] Checking if preload exists for k8s version v1.23.3 and runtime docker
+I0404 21:34:59.993389   64779 preload.go:148] Found local preload: /Users/rismanda.kusumadewi/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v17-v1.23.3-docker-overlay2-amd64.tar.lz4
+I0404 21:34:59.993432   64779 cache.go:57] Caching tarball of preloaded images
+I0404 21:34:59.994084   64779 preload.go:174] Found /Users/rismanda.kusumadewi/.minikube/cache/preloaded-tarball/preloaded-images-k8s-v17-v1.23.3-docker-overlay2-amd64.tar.lz4 in cache, skipping download
+I0404 21:34:59.994111   64779 cache.go:60] Finished verifying existence of preloaded tar for  v1.23.3 on docker
+I0404 21:34:59.996826   64779 profile.go:148] Saving config to /Users/rismanda.kusumadewi/.minikube/profiles/minikube/config.json ...
+I0404 21:34:59.999676   64779 cache.go:208] Successfully downloaded all kic artifacts
+I0404 21:35:00.000209   64779 start.go:313] acquiring machines lock for minikube: {Name:mkdb3118d2a453370e45fb80da41fb0b6b7b9061 Clock:{} Delay:500ms Timeout:13m0s Cancel:<nil>}
+I0404 21:35:00.000449   64779 start.go:317] acquired machines lock for "minikube" in 220.009µs
+I0404 21:35:00.000502   64779 start.go:93] Skipping create...Using existing machine configuration
+I0404 21:35:00.000540   64779 fix.go:55] fixHost starting: 
+I0404 21:35:00.001071   64779 main.go:130] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0404 21:35:00.587876   64779 main.go:130] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+CfgFile="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2022-04-04T14:27:15.029000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="5be2952e-d4c7-40a4-ba0c-ec49d43838ec"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cfab47e0-9d61-4347-94db-9b23e8cfa941"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027C6E649"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,49394,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="0800275FDE90"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1649082457154
+GuestAdditionsFacility_VirtualBox System Service=50,1649082457550
+GuestAdditionsFacility_Seamless Mode=0,1649082457735
+GuestAdditionsFacility_Graphics Mode=0,1649082457093
+}
+I0404 21:35:00.587905   64779 main.go:130] libmachine: STDERR:
+{
+}
+I0404 21:35:00.588034   64779 fix.go:108] recreateIfNeeded on minikube: state=Running err=<nil>
+W0404 21:35:00.588054   64779 fix.go:134] unexpected machine state, will restart: <nil>
+I0404 21:35:00.600418   64779 out.go:176] 🏃  Updating the running virtualbox "minikube" VM ...
+I0404 21:35:00.600480   64779 machine.go:88] provisioning docker machine ...
+I0404 21:35:00.600516   64779 buildroot.go:166] provisioning hostname "minikube"
+I0404 21:35:00.600836   64779 main.go:130] libmachine: Using SSH client type: native
+I0404 21:35:00.601467   64779 main.go:130] libmachine: &{{{<nil> 0 [] [] []} docker [0x43a26a0] 0x43a5780 <nil>  [] 0s} 127.0.0.1 49394 <nil> <nil>}
+I0404 21:35:00.601480   64779 main.go:130] libmachine: About to run SSH command:
+sudo hostname minikube && echo "minikube" | sudo tee /etc/hostname
+I0404 21:35:01.410258   64779 main.go:130] libmachine: SSH cmd err, output: <nil>: minikube
+
+I0404 21:35:01.410391   64779 main.go:130] libmachine: Using SSH client type: native
+I0404 21:35:01.410668   64779 main.go:130] libmachine: &{{{<nil> 0 [] [] []} docker [0x43a26a0] 0x43a5780 <nil>  [] 0s} 127.0.0.1 49394 <nil> <nil>}
+I0404 21:35:01.410686   64779 main.go:130] libmachine: About to run SSH command:
+
+		if ! grep -xq '.*\sminikube' /etc/hosts; then
+			if grep -xq '127.0.1.1\s.*' /etc/hosts; then
+				sudo sed -i 's/^127.0.1.1\s.*/127.0.1.1 minikube/g' /etc/hosts;
+			else 
+				echo '127.0.1.1 minikube' | sudo tee -a /etc/hosts; 
+			fi
+		fi
+I0404 21:35:01.819083   64779 main.go:130] libmachine: SSH cmd err, output: <nil>: 
+I0404 21:35:01.819117   64779 buildroot.go:172] set auth options {CertDir:/Users/rismanda.kusumadewi/.minikube CaCertPath:/Users/rismanda.kusumadewi/.minikube/certs/ca.pem CaPrivateKeyPath:/Users/rismanda.kusumadewi/.minikube/certs/ca-key.pem CaCertRemotePath:/etc/docker/ca.pem ServerCertPath:/Users/rismanda.kusumadewi/.minikube/machines/server.pem ServerKeyPath:/Users/rismanda.kusumadewi/.minikube/machines/server-key.pem ClientKeyPath:/Users/rismanda.kusumadewi/.minikube/certs/key.pem ServerCertRemotePath:/etc/docker/server.pem ServerKeyRemotePath:/etc/docker/server-key.pem ClientCertPath:/Users/rismanda.kusumadewi/.minikube/certs/cert.pem ServerCertSANs:[] StorePath:/Users/rismanda.kusumadewi/.minikube}
+I0404 21:35:01.819143   64779 buildroot.go:174] setting up certificates
+I0404 21:35:01.819178   64779 provision.go:83] configureAuth start
+I0404 21:35:01.819215   64779 main.go:130] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0404 21:35:01.982677   64779 main.go:130] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+CfgFile="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2022-04-04T14:27:15.029000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="5be2952e-d4c7-40a4-ba0c-ec49d43838ec"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cfab47e0-9d61-4347-94db-9b23e8cfa941"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027C6E649"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,49394,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="0800275FDE90"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1649082457154
+GuestAdditionsFacility_VirtualBox System Service=50,1649082457550
+GuestAdditionsFacility_Seamless Mode=0,1649082457735
+GuestAdditionsFacility_Graphics Mode=0,1649082457093
+}
+I0404 21:35:01.982724   64779 main.go:130] libmachine: STDERR:
+{
+}
+I0404 21:35:01.982869   64779 main.go:130] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0404 21:35:02.488830   64779 main.go:130] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+CfgFile="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2022-04-04T14:27:15.029000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="5be2952e-d4c7-40a4-ba0c-ec49d43838ec"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cfab47e0-9d61-4347-94db-9b23e8cfa941"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027C6E649"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,49394,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="0800275FDE90"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1649082457154
+GuestAdditionsFacility_VirtualBox System Service=50,1649082457550
+GuestAdditionsFacility_Seamless Mode=0,1649082457735
+GuestAdditionsFacility_Graphics Mode=0,1649082457093
+}
+I0404 21:35:02.489126   64779 main.go:130] libmachine: STDERR:
+{
+}
+I0404 21:35:02.489475   64779 main.go:130] libmachine: Host-only MAC: 0800275fde90
+
+I0404 21:35:02.489610   64779 main.go:130] libmachine: Using SSH client type: native
+I0404 21:35:02.489911   64779 main.go:130] libmachine: &{{{<nil> 0 [] [] []} docker [0x43a26a0] 0x43a5780 <nil>  [] 0s} 127.0.0.1 49394 <nil> <nil>}
+I0404 21:35:02.489920   64779 main.go:130] libmachine: About to run SSH command:
+ip addr show
+I0404 21:35:02.974158   64779 main.go:130] libmachine: SSH cmd err, output: <nil>: 257: veth3660da0@if256: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 96:a2:50:0c:12:9c brd ff:ff:ff:ff:ff:ff link-netnsid 43
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:c6:e6:49 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86117sec preferred_lft 86117sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:5f:de:90 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.100/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 317sec preferred_lft 317sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+261: veth0320d9c@if260: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether a2:20:8c:45:6b:ae brd ff:ff:ff:ff:ff:ff link-netnsid 44
+5: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:07:cf:66:6e brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+7: veth8dae883@if6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 06:a4:31:39:bd:9b brd ff:ff:ff:ff:ff:ff link-netnsid 0
+9: vethe26f2a2@if8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 2e:58:2b:47:c0:17 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+11: veth85db2a6@if10: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether b2:c7:50:09:a5:4a brd ff:ff:ff:ff:ff:ff link-netnsid 3
+13: veth797d033@if12: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 66:d2:c7:dc:45:7a brd ff:ff:ff:ff:ff:ff link-netnsid 2
+15: veth2a789bb@if14: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 5a:31:7a:15:11:9e brd ff:ff:ff:ff:ff:ff link-netnsid 6
+17: veth623ced0@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 9e:e3:3c:1e:c8:7a brd ff:ff:ff:ff:ff:ff link-netnsid 4
+19: veth3bc8ffa@if18: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:7f:7b:29:ae:1e brd ff:ff:ff:ff:ff:ff link-netnsid 5
+21: veth440e1d4@if20: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ba:71:50:f4:a1:7e brd ff:ff:ff:ff:ff:ff link-netnsid 11
+23: vethbb5dc74@if22: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 92:3c:fc:1e:85:92 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+25: veth2507aac@if24: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6a:05:79:48:04:95 brd ff:ff:ff:ff:ff:ff link-netnsid 12
+27: veth837f6d0@if26: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 42:c9:21:d3:ff:ad brd ff:ff:ff:ff:ff:ff link-netnsid 9
+29: vetha341828@if28: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 3e:c9:1e:42:bb:90 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+31: vethb800f44@if30: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 5a:3e:f3:db:67:3e brd ff:ff:ff:ff:ff:ff link-netnsid 15
+33: veth20959a9@if32: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 56:9c:ed:f2:1f:6f brd ff:ff:ff:ff:ff:ff link-netnsid 7
+37: vethf909f5b@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 1e:67:87:81:4a:a3 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+39: veth9e66b10@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ee:b0:89:b7:14:f3 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+41: vethd7d85b7@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ea:c9:c3:68:b0:02 brd ff:ff:ff:ff:ff:ff link-netnsid 18
+43: veth2012fab@if42: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 46:e2:26:24:10:a2 brd ff:ff:ff:ff:ff:ff link-netnsid 21
+45: veth43f8acb@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:b9:c4:ad:11:22 brd ff:ff:ff:ff:ff:ff link-netnsid 17
+47: veth03e00ea@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ce:31:06:e7:8a:20 brd ff:ff:ff:ff:ff:ff link-netnsid 24
+49: vethfb65067@if48: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 3e:a7:7d:13:80:1b brd ff:ff:ff:ff:ff:ff link-netnsid 20
+51: vethc5efc35@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 1a:0b:0f:39:d1:a3 brd ff:ff:ff:ff:ff:ff link-netnsid 22
+53: veth38d26ce@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether fe:24:f0:e2:34:1d brd ff:ff:ff:ff:ff:ff link-netnsid 26
+57: veth0fd3f81@if56: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 42:93:dc:b0:61:1d brd ff:ff:ff:ff:ff:ff link-netnsid 19
+59: veth37615c4@if58: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:f5:93:65:99:21 brd ff:ff:ff:ff:ff:ff link-netnsid 25
+391: veth93fd4b0@if390: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6a:26:c3:4a:15:1a brd ff:ff:ff:ff:ff:ff link-netnsid 45
+393: veth6f5c4f3@if392: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 36:d2:53:c9:c1:2f brd ff:ff:ff:ff:ff:ff link-netnsid 46
+395: veth5ef5148@if394: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 4a:7c:9d:83:d2:c4 brd ff:ff:ff:ff:ff:ff link-netnsid 47
+397: vethfaace8c@if396: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ce:e2:98:6c:a0:5a brd ff:ff:ff:ff:ff:ff link-netnsid 51
+399: vethc7e601f@if398: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ee:8f:13:76:a5:2a brd ff:ff:ff:ff:ff:ff link-netnsid 49
+401: vethd0f5d97@if400: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ba:91:48:39:ff:f7 brd ff:ff:ff:ff:ff:ff link-netnsid 50
+403: veth7a7cede@if402: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether fe:15:a8:bc:c1:f2 brd ff:ff:ff:ff:ff:ff link-netnsid 48
+405: veth7ab0869@if404: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 0e:16:fe:37:cc:8b brd ff:ff:ff:ff:ff:ff link-netnsid 52
+149: veth88e4415@if148: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 9e:2d:af:5a:72:8b brd ff:ff:ff:ff:ff:ff link-netnsid 35
+407: veth1b4f478@if406: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8a:09:a4:1b:91:7a brd ff:ff:ff:ff:ff:ff link-netnsid 54
+151: veth3e27d38@if150: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether e2:02:bc:4e:fa:9c brd ff:ff:ff:ff:ff:ff link-netnsid 36
+409: vetha9ff283@if408: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether b2:96:ac:64:3b:cb brd ff:ff:ff:ff:ff:ff link-netnsid 53
+411: veth96ddb20@if410: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8a:5d:84:1a:a7:13 brd ff:ff:ff:ff:ff:ff link-netnsid 55
+155: vethbceb9d1@if154: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 16:7f:4d:56:a4:bb brd ff:ff:ff:ff:ff:ff link-netnsid 37
+413: veth9148331@if412: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6e:bd:8d:08:9e:d7 brd ff:ff:ff:ff:ff:ff link-netnsid 56
+415: vethbd3b29d@if414: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 36:dd:80:db:b1:ad brd ff:ff:ff:ff:ff:ff link-netnsid 57
+417: veth9457570@if416: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether be:aa:c1:91:c1:2c brd ff:ff:ff:ff:ff:ff link-netnsid 58
+419: veth4293385@if418: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 2e:9f:ce:f3:a1:ff brd ff:ff:ff:ff:ff:ff link-netnsid 59
+255: vethee88a39@if254: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether a2:9a:87:f1:1a:d8 brd ff:ff:ff:ff:ff:ff link-netnsid 13
+
+I0404 21:35:02.974653   64779 main.go:130] libmachine: SSH returned: 257: veth3660da0@if256: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 96:a2:50:0c:12:9c brd ff:ff:ff:ff:ff:ff link-netnsid 43
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:c6:e6:49 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86117sec preferred_lft 86117sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:5f:de:90 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.100/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 317sec preferred_lft 317sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+261: veth0320d9c@if260: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether a2:20:8c:45:6b:ae brd ff:ff:ff:ff:ff:ff link-netnsid 44
+5: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:07:cf:66:6e brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+7: veth8dae883@if6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 06:a4:31:39:bd:9b brd ff:ff:ff:ff:ff:ff link-netnsid 0
+9: vethe26f2a2@if8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 2e:58:2b:47:c0:17 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+11: veth85db2a6@if10: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether b2:c7:50:09:a5:4a brd ff:ff:ff:ff:ff:ff link-netnsid 3
+13: veth797d033@if12: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 66:d2:c7:dc:45:7a brd ff:ff:ff:ff:ff:ff link-netnsid 2
+15: veth2a789bb@if14: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 5a:31:7a:15:11:9e brd ff:ff:ff:ff:ff:ff link-netnsid 6
+17: veth623ced0@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 9e:e3:3c:1e:c8:7a brd ff:ff:ff:ff:ff:ff link-netnsid 4
+19: veth3bc8ffa@if18: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:7f:7b:29:ae:1e brd ff:ff:ff:ff:ff:ff link-netnsid 5
+21: veth440e1d4@if20: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ba:71:50:f4:a1:7e brd ff:ff:ff:ff:ff:ff link-netnsid 11
+23: vethbb5dc74@if22: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 92:3c:fc:1e:85:92 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+25: veth2507aac@if24: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6a:05:79:48:04:95 brd ff:ff:ff:ff:ff:ff link-netnsid 12
+27: veth837f6d0@if26: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 42:c9:21:d3:ff:ad brd ff:ff:ff:ff:ff:ff link-netnsid 9
+29: vetha341828@if28: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 3e:c9:1e:42:bb:90 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+31: vethb800f44@if30: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 5a:3e:f3:db:67:3e brd ff:ff:ff:ff:ff:ff link-netnsid 15
+33: veth20959a9@if32: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 56:9c:ed:f2:1f:6f brd ff:ff:ff:ff:ff:ff link-netnsid 7
+37: vethf909f5b@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 1e:67:87:81:4a:a3 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+39: veth9e66b10@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ee:b0:89:b7:14:f3 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+41: vethd7d85b7@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ea:c9:c3:68:b0:02 brd ff:ff:ff:ff:ff:ff link-netnsid 18
+43: veth2012fab@if42: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 46:e2:26:24:10:a2 brd ff:ff:ff:ff:ff:ff link-netnsid 21
+45: veth43f8acb@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:b9:c4:ad:11:22 brd ff:ff:ff:ff:ff:ff link-netnsid 17
+47: veth03e00ea@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ce:31:06:e7:8a:20 brd ff:ff:ff:ff:ff:ff link-netnsid 24
+49: vethfb65067@if48: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 3e:a7:7d:13:80:1b brd ff:ff:ff:ff:ff:ff link-netnsid 20
+51: vethc5efc35@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 1a:0b:0f:39:d1:a3 brd ff:ff:ff:ff:ff:ff link-netnsid 22
+53: veth38d26ce@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether fe:24:f0:e2:34:1d brd ff:ff:ff:ff:ff:ff link-netnsid 26
+57: veth0fd3f81@if56: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 42:93:dc:b0:61:1d brd ff:ff:ff:ff:ff:ff link-netnsid 19
+59: veth37615c4@if58: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:f5:93:65:99:21 brd ff:ff:ff:ff:ff:ff link-netnsid 25
+391: veth93fd4b0@if390: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6a:26:c3:4a:15:1a brd ff:ff:ff:ff:ff:ff link-netnsid 45
+393: veth6f5c4f3@if392: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 36:d2:53:c9:c1:2f brd ff:ff:ff:ff:ff:ff link-netnsid 46
+395: veth5ef5148@if394: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 4a:7c:9d:83:d2:c4 brd ff:ff:ff:ff:ff:ff link-netnsid 47
+397: vethfaace8c@if396: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ce:e2:98:6c:a0:5a brd ff:ff:ff:ff:ff:ff link-netnsid 51
+399: vethc7e601f@if398: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ee:8f:13:76:a5:2a brd ff:ff:ff:ff:ff:ff link-netnsid 49
+401: vethd0f5d97@if400: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ba:91:48:39:ff:f7 brd ff:ff:ff:ff:ff:ff link-netnsid 50
+403: veth7a7cede@if402: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether fe:15:a8:bc:c1:f2 brd ff:ff:ff:ff:ff:ff link-netnsid 48
+405: veth7ab0869@if404: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 0e:16:fe:37:cc:8b brd ff:ff:ff:ff:ff:ff link-netnsid 52
+149: veth88e4415@if148: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 9e:2d:af:5a:72:8b brd ff:ff:ff:ff:ff:ff link-netnsid 35
+407: veth1b4f478@if406: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8a:09:a4:1b:91:7a brd ff:ff:ff:ff:ff:ff link-netnsid 54
+151: veth3e27d38@if150: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether e2:02:bc:4e:fa:9c brd ff:ff:ff:ff:ff:ff link-netnsid 36
+409: vetha9ff283@if408: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether b2:96:ac:64:3b:cb brd ff:ff:ff:ff:ff:ff link-netnsid 53
+411: veth96ddb20@if410: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8a:5d:84:1a:a7:13 brd ff:ff:ff:ff:ff:ff link-netnsid 55
+155: vethbceb9d1@if154: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 16:7f:4d:56:a4:bb brd ff:ff:ff:ff:ff:ff link-netnsid 37
+413: veth9148331@if412: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6e:bd:8d:08:9e:d7 brd ff:ff:ff:ff:ff:ff link-netnsid 56
+415: vethbd3b29d@if414: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 36:dd:80:db:b1:ad brd ff:ff:ff:ff:ff:ff link-netnsid 57
+417: veth9457570@if416: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether be:aa:c1:91:c1:2c brd ff:ff:ff:ff:ff:ff link-netnsid 58
+419: veth4293385@if418: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 2e:9f:ce:f3:a1:ff brd ff:ff:ff:ff:ff:ff link-netnsid 59
+255: vethee88a39@if254: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether a2:9a:87:f1:1a:d8 brd ff:ff:ff:ff:ff:ff link-netnsid 13
+
+END SSH
+
+I0404 21:35:02.974706   64779 provision.go:138] copyHostCerts
+I0404 21:35:02.975445   64779 exec_runner.go:144] found /Users/rismanda.kusumadewi/.minikube/ca.pem, removing ...
+I0404 21:35:02.975465   64779 exec_runner.go:207] rm: /Users/rismanda.kusumadewi/.minikube/ca.pem
+I0404 21:35:03.105381   64779 exec_runner.go:151] cp: /Users/rismanda.kusumadewi/.minikube/certs/ca.pem --> /Users/rismanda.kusumadewi/.minikube/ca.pem (1111 bytes)
+I0404 21:35:03.106214   64779 exec_runner.go:144] found /Users/rismanda.kusumadewi/.minikube/cert.pem, removing ...
+I0404 21:35:03.106223   64779 exec_runner.go:207] rm: /Users/rismanda.kusumadewi/.minikube/cert.pem
+I0404 21:35:03.108563   64779 exec_runner.go:151] cp: /Users/rismanda.kusumadewi/.minikube/certs/cert.pem --> /Users/rismanda.kusumadewi/.minikube/cert.pem (1155 bytes)
+I0404 21:35:03.109335   64779 exec_runner.go:144] found /Users/rismanda.kusumadewi/.minikube/key.pem, removing ...
+I0404 21:35:03.109347   64779 exec_runner.go:207] rm: /Users/rismanda.kusumadewi/.minikube/key.pem
+I0404 21:35:03.110102   64779 exec_runner.go:151] cp: /Users/rismanda.kusumadewi/.minikube/certs/key.pem --> /Users/rismanda.kusumadewi/.minikube/key.pem (1679 bytes)
+I0404 21:35:03.111155   64779 provision.go:112] generating server cert: /Users/rismanda.kusumadewi/.minikube/machines/server.pem ca-key=/Users/rismanda.kusumadewi/.minikube/certs/ca.pem private-key=/Users/rismanda.kusumadewi/.minikube/certs/ca-key.pem org=rismanda.kusumadewi.minikube san=[192.168.59.100 127.0.0.1 localhost 127.0.0.1 minikube minikube]
+I0404 21:35:03.479906   64779 provision.go:172] copyRemoteCerts
+I0404 21:35:03.511605   64779 ssh_runner.go:195] Run: sudo mkdir -p /etc/docker /etc/docker /etc/docker
+I0404 21:35:03.511661   64779 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:49394 SSHKeyPath:/Users/rismanda.kusumadewi/.minikube/machines/minikube/id_rsa Username:docker}
+I0404 21:35:03.749737   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/certs/ca.pem --> /etc/docker/ca.pem (1111 bytes)
+I0404 21:35:03.968606   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/machines/server.pem --> /etc/docker/server.pem (1237 bytes)
+I0404 21:35:04.153629   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/machines/server-key.pem --> /etc/docker/server-key.pem (1679 bytes)
+I0404 21:35:04.379233   64779 provision.go:86] duration metric: configureAuth took 2.56007854s
+I0404 21:35:04.379249   64779 buildroot.go:189] setting minikube options for container-runtime
+I0404 21:35:04.379549   64779 config.go:176] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.23.3
+I0404 21:35:04.379635   64779 main.go:130] libmachine: Using SSH client type: native
+I0404 21:35:04.379833   64779 main.go:130] libmachine: &{{{<nil> 0 [] [] []} docker [0x43a26a0] 0x43a5780 <nil>  [] 0s} 127.0.0.1 49394 <nil> <nil>}
+I0404 21:35:04.379843   64779 main.go:130] libmachine: About to run SSH command:
+df --output=fstype / | tail -n 1
+I0404 21:35:04.797870   64779 main.go:130] libmachine: SSH cmd err, output: <nil>: tmpfs
+
+I0404 21:35:04.797882   64779 buildroot.go:70] root file system type: tmpfs
+I0404 21:35:04.798505   64779 provision.go:309] Updating docker unit: /lib/systemd/system/docker.service ...
+I0404 21:35:04.798611   64779 main.go:130] libmachine: Using SSH client type: native
+I0404 21:35:04.798835   64779 main.go:130] libmachine: &{{{<nil> 0 [] [] []} docker [0x43a26a0] 0x43a5780 <nil>  [] 0s} 127.0.0.1 49394 <nil> <nil>}
+I0404 21:35:04.798924   64779 main.go:130] libmachine: About to run SSH command:
+sudo mkdir -p /lib/systemd/system && printf %!s(MISSING) "[Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=virtualbox --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP \$MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+" | sudo tee /lib/systemd/system/docker.service.new
+I0404 21:35:05.425678   64779 main.go:130] libmachine: SSH cmd err, output: <nil>: [Unit]
+Description=Docker Application Container Engine
+Documentation=https://docs.docker.com
+After=network.target  minikube-automount.service docker.socket
+Requires= minikube-automount.service docker.socket 
+StartLimitBurst=3
+StartLimitIntervalSec=60
+
+[Service]
+Type=notify
+Restart=on-failure
+
+
+
+# This file is a systemd drop-in unit that inherits from the base dockerd configuration.
+# The base configuration already specifies an 'ExecStart=...' command. The first directive
+# here is to clear out that command inherited from the base configuration. Without this,
+# the command from the base configuration and the command specified here are treated as
+# a sequence of commands, which is not the desired behavior, nor is it valid -- systemd
+# will catch this invalid input and refuse to start the service with an error like:
+#  Service has more than one ExecStart= setting, which is only allowed for Type=oneshot services.
+
+# NOTE: default-ulimit=nofile is set to an arbitrary number for consistency with other
+# container runtimes. If left unlimited, it may result in OOM issues with MySQL.
+ExecStart=
+ExecStart=/usr/bin/dockerd -H tcp://0.0.0.0:2376 -H unix:///var/run/docker.sock --default-ulimit=nofile=1048576:1048576 --tlsverify --tlscacert /etc/docker/ca.pem --tlscert /etc/docker/server.pem --tlskey /etc/docker/server-key.pem --label provider=virtualbox --insecure-registry 10.96.0.0/12 
+ExecReload=/bin/kill -s HUP $MAINPID
+
+# Having non-zero Limit*s causes performance problems due to accounting overhead
+# in the kernel. We recommend using cgroups to do container-local accounting.
+LimitNOFILE=infinity
+LimitNPROC=infinity
+LimitCORE=infinity
+
+# Uncomment TasksMax if your systemd version supports it.
+# Only systemd 226 and above support this version.
+TasksMax=infinity
+TimeoutStartSec=0
+
+# set delegate yes so that systemd does not reset the cgroups of docker containers
+Delegate=yes
+
+# kill only the docker process, not all processes in the cgroup
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
+I0404 21:35:05.425798   64779 main.go:130] libmachine: Using SSH client type: native
+I0404 21:35:05.426013   64779 main.go:130] libmachine: &{{{<nil> 0 [] [] []} docker [0x43a26a0] 0x43a5780 <nil>  [] 0s} 127.0.0.1 49394 <nil> <nil>}
+I0404 21:35:05.426037   64779 main.go:130] libmachine: About to run SSH command:
+sudo diff -u /lib/systemd/system/docker.service /lib/systemd/system/docker.service.new || { sudo mv /lib/systemd/system/docker.service.new /lib/systemd/system/docker.service; sudo systemctl -f daemon-reload && sudo systemctl -f enable docker && sudo systemctl -f restart docker; }
+I0404 21:35:06.087914   64779 main.go:130] libmachine: SSH cmd err, output: <nil>: 
+I0404 21:35:06.087928   64779 machine.go:91] provisioned docker machine in 5.487530859s
+I0404 21:35:06.087945   64779 start.go:267] post-start starting for "minikube" (driver="virtualbox")
+I0404 21:35:06.087950   64779 start.go:277] creating required directories: [/etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs]
+I0404 21:35:06.088062   64779 ssh_runner.go:195] Run: sudo mkdir -p /etc/kubernetes/addons /etc/kubernetes/manifests /var/tmp/minikube /var/lib/minikube /var/lib/minikube/certs /var/lib/minikube/images /var/lib/minikube/binaries /tmp/gvisor /usr/share/ca-certificates /etc/ssl/certs
+I0404 21:35:06.088075   64779 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:49394 SSHKeyPath:/Users/rismanda.kusumadewi/.minikube/machines/minikube/id_rsa Username:docker}
+I0404 21:35:06.547994   64779 ssh_runner.go:195] Run: cat /etc/os-release
+I0404 21:35:06.638957   64779 info.go:137] Remote host: Buildroot 2021.02.4
+I0404 21:35:06.639281   64779 filesync.go:126] Scanning /Users/rismanda.kusumadewi/.minikube/addons for local assets ...
+I0404 21:35:06.639533   64779 filesync.go:126] Scanning /Users/rismanda.kusumadewi/.minikube/files for local assets ...
+I0404 21:35:06.639640   64779 start.go:270] post-start completed in 551.697009ms
+I0404 21:35:06.640039   64779 main.go:130] libmachine: Using SSH client type: native
+I0404 21:35:06.640295   64779 main.go:130] libmachine: &{{{<nil> 0 [] [] []} docker [0x43a26a0] 0x43a5780 <nil>  [] 0s} 127.0.0.1 49394 <nil> <nil>}
+I0404 21:35:06.640304   64779 main.go:130] libmachine: About to run SSH command:
+date +%!s(MISSING).%!N(MISSING)
+I0404 21:35:07.529404   64779 main.go:130] libmachine: SSH cmd err, output: <nil>: 1649082907.534515843
+
+I0404 21:35:07.529417   64779 fix.go:212] guest clock: 1649082907.534515843
+I0404 21:35:07.529425   64779 fix.go:225] Guest: 2022-04-04 21:35:07.534515843 +0700 WIB Remote: 2022-04-04 21:35:06.639645 +0700 WIB m=+7.804652224 (delta=894.870843ms)
+I0404 21:35:07.531564   64779 fix.go:196] guest clock delta is within tolerance: 894.870843ms
+I0404 21:35:07.531570   64779 fix.go:57] fixHost completed within 7.531180703s
+I0404 21:35:07.531585   64779 start.go:80] releasing machines lock for "minikube", held for 7.531236505s
+I0404 21:35:07.531777   64779 main.go:130] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0404 21:35:08.371456   64779 main.go:130] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+CfgFile="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2022-04-04T14:27:15.029000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="5be2952e-d4c7-40a4-ba0c-ec49d43838ec"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cfab47e0-9d61-4347-94db-9b23e8cfa941"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027C6E649"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,49394,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="0800275FDE90"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1649082457154
+GuestAdditionsFacility_VirtualBox System Service=50,1649082457550
+GuestAdditionsFacility_Seamless Mode=0,1649082457735
+GuestAdditionsFacility_Graphics Mode=0,1649082457093
+}
+I0404 21:35:08.371574   64779 main.go:130] libmachine: STDERR:
+{
+}
+I0404 21:35:08.371791   64779 main.go:130] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0404 21:35:10.471479   64779 main.go:130] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+CfgFile="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2022-04-04T14:27:15.029000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="5be2952e-d4c7-40a4-ba0c-ec49d43838ec"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cfab47e0-9d61-4347-94db-9b23e8cfa941"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027C6E649"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,49394,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="0800275FDE90"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1649082457154
+GuestAdditionsFacility_VirtualBox System Service=50,1649082457550
+GuestAdditionsFacility_Seamless Mode=0,1649082457735
+GuestAdditionsFacility_Graphics Mode=0,1649082457093
+}
+I0404 21:35:10.471522   64779 main.go:130] libmachine: STDERR:
+{
+}
+I0404 21:35:10.471797   64779 main.go:130] libmachine: Host-only MAC: 0800275fde90
+
+I0404 21:35:10.471892   64779 main.go:130] libmachine: Using SSH client type: native
+I0404 21:35:10.472144   64779 main.go:130] libmachine: &{{{<nil> 0 [] [] []} docker [0x43a26a0] 0x43a5780 <nil>  [] 0s} 127.0.0.1 49394 <nil> <nil>}
+I0404 21:35:10.472154   64779 main.go:130] libmachine: About to run SSH command:
+ip addr show
+I0404 21:35:11.720037   64779 main.go:130] libmachine: SSH cmd err, output: <nil>: 257: veth3660da0@if256: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 96:a2:50:0c:12:9c brd ff:ff:ff:ff:ff:ff link-netnsid 43
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:c6:e6:49 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86108sec preferred_lft 86108sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:5f:de:90 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.100/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 308sec preferred_lft 308sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+261: veth0320d9c@if260: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether a2:20:8c:45:6b:ae brd ff:ff:ff:ff:ff:ff link-netnsid 44
+5: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:07:cf:66:6e brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+7: veth8dae883@if6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 06:a4:31:39:bd:9b brd ff:ff:ff:ff:ff:ff link-netnsid 0
+9: vethe26f2a2@if8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 2e:58:2b:47:c0:17 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+11: veth85db2a6@if10: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether b2:c7:50:09:a5:4a brd ff:ff:ff:ff:ff:ff link-netnsid 3
+13: veth797d033@if12: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 66:d2:c7:dc:45:7a brd ff:ff:ff:ff:ff:ff link-netnsid 2
+15: veth2a789bb@if14: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 5a:31:7a:15:11:9e brd ff:ff:ff:ff:ff:ff link-netnsid 6
+17: veth623ced0@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 9e:e3:3c:1e:c8:7a brd ff:ff:ff:ff:ff:ff link-netnsid 4
+19: veth3bc8ffa@if18: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:7f:7b:29:ae:1e brd ff:ff:ff:ff:ff:ff link-netnsid 5
+21: veth440e1d4@if20: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ba:71:50:f4:a1:7e brd ff:ff:ff:ff:ff:ff link-netnsid 11
+23: vethbb5dc74@if22: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 92:3c:fc:1e:85:92 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+25: veth2507aac@if24: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6a:05:79:48:04:95 brd ff:ff:ff:ff:ff:ff link-netnsid 12
+27: veth837f6d0@if26: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 42:c9:21:d3:ff:ad brd ff:ff:ff:ff:ff:ff link-netnsid 9
+29: vetha341828@if28: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 3e:c9:1e:42:bb:90 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+31: vethb800f44@if30: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 5a:3e:f3:db:67:3e brd ff:ff:ff:ff:ff:ff link-netnsid 15
+33: veth20959a9@if32: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 56:9c:ed:f2:1f:6f brd ff:ff:ff:ff:ff:ff link-netnsid 7
+37: vethf909f5b@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 1e:67:87:81:4a:a3 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+39: veth9e66b10@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ee:b0:89:b7:14:f3 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+41: vethd7d85b7@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ea:c9:c3:68:b0:02 brd ff:ff:ff:ff:ff:ff link-netnsid 18
+43: veth2012fab@if42: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 46:e2:26:24:10:a2 brd ff:ff:ff:ff:ff:ff link-netnsid 21
+45: veth43f8acb@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:b9:c4:ad:11:22 brd ff:ff:ff:ff:ff:ff link-netnsid 17
+47: veth03e00ea@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ce:31:06:e7:8a:20 brd ff:ff:ff:ff:ff:ff link-netnsid 24
+49: vethfb65067@if48: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 3e:a7:7d:13:80:1b brd ff:ff:ff:ff:ff:ff link-netnsid 20
+51: vethc5efc35@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 1a:0b:0f:39:d1:a3 brd ff:ff:ff:ff:ff:ff link-netnsid 22
+53: veth38d26ce@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether fe:24:f0:e2:34:1d brd ff:ff:ff:ff:ff:ff link-netnsid 26
+57: veth0fd3f81@if56: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 42:93:dc:b0:61:1d brd ff:ff:ff:ff:ff:ff link-netnsid 19
+59: veth37615c4@if58: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:f5:93:65:99:21 brd ff:ff:ff:ff:ff:ff link-netnsid 25
+391: veth93fd4b0@if390: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6a:26:c3:4a:15:1a brd ff:ff:ff:ff:ff:ff link-netnsid 45
+393: veth6f5c4f3@if392: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 36:d2:53:c9:c1:2f brd ff:ff:ff:ff:ff:ff link-netnsid 46
+395: veth5ef5148@if394: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 4a:7c:9d:83:d2:c4 brd ff:ff:ff:ff:ff:ff link-netnsid 47
+397: vethfaace8c@if396: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ce:e2:98:6c:a0:5a brd ff:ff:ff:ff:ff:ff link-netnsid 51
+399: vethc7e601f@if398: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ee:8f:13:76:a5:2a brd ff:ff:ff:ff:ff:ff link-netnsid 49
+401: vethd0f5d97@if400: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ba:91:48:39:ff:f7 brd ff:ff:ff:ff:ff:ff link-netnsid 50
+403: veth7a7cede@if402: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether fe:15:a8:bc:c1:f2 brd ff:ff:ff:ff:ff:ff link-netnsid 48
+405: veth7ab0869@if404: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 0e:16:fe:37:cc:8b brd ff:ff:ff:ff:ff:ff link-netnsid 52
+149: veth88e4415@if148: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 9e:2d:af:5a:72:8b brd ff:ff:ff:ff:ff:ff link-netnsid 35
+407: veth1b4f478@if406: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8a:09:a4:1b:91:7a brd ff:ff:ff:ff:ff:ff link-netnsid 54
+151: veth3e27d38@if150: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether e2:02:bc:4e:fa:9c brd ff:ff:ff:ff:ff:ff link-netnsid 36
+409: vetha9ff283@if408: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether b2:96:ac:64:3b:cb brd ff:ff:ff:ff:ff:ff link-netnsid 53
+411: veth96ddb20@if410: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8a:5d:84:1a:a7:13 brd ff:ff:ff:ff:ff:ff link-netnsid 55
+155: vethbceb9d1@if154: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 16:7f:4d:56:a4:bb brd ff:ff:ff:ff:ff:ff link-netnsid 37
+413: veth9148331@if412: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6e:bd:8d:08:9e:d7 brd ff:ff:ff:ff:ff:ff link-netnsid 56
+415: vethbd3b29d@if414: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 36:dd:80:db:b1:ad brd ff:ff:ff:ff:ff:ff link-netnsid 57
+417: veth9457570@if416: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether be:aa:c1:91:c1:2c brd ff:ff:ff:ff:ff:ff link-netnsid 58
+419: veth4293385@if418: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 2e:9f:ce:f3:a1:ff brd ff:ff:ff:ff:ff:ff link-netnsid 59
+255: vethee88a39@if254: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether a2:9a:87:f1:1a:d8 brd ff:ff:ff:ff:ff:ff link-netnsid 13
+
+I0404 21:35:11.720534   64779 main.go:130] libmachine: SSH returned: 257: veth3660da0@if256: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 96:a2:50:0c:12:9c brd ff:ff:ff:ff:ff:ff link-netnsid 43
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:c6:e6:49 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic eth0
+       valid_lft 86108sec preferred_lft 86108sec
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:5f:de:90 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.59.100/24 brd 192.168.59.255 scope global dynamic eth1
+       valid_lft 308sec preferred_lft 308sec
+4: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+261: veth0320d9c@if260: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether a2:20:8c:45:6b:ae brd ff:ff:ff:ff:ff:ff link-netnsid 44
+5: docker0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP group default 
+    link/ether 02:42:07:cf:66:6e brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+7: veth8dae883@if6: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 06:a4:31:39:bd:9b brd ff:ff:ff:ff:ff:ff link-netnsid 0
+9: vethe26f2a2@if8: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 2e:58:2b:47:c0:17 brd ff:ff:ff:ff:ff:ff link-netnsid 1
+11: veth85db2a6@if10: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether b2:c7:50:09:a5:4a brd ff:ff:ff:ff:ff:ff link-netnsid 3
+13: veth797d033@if12: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 66:d2:c7:dc:45:7a brd ff:ff:ff:ff:ff:ff link-netnsid 2
+15: veth2a789bb@if14: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 5a:31:7a:15:11:9e brd ff:ff:ff:ff:ff:ff link-netnsid 6
+17: veth623ced0@if16: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 9e:e3:3c:1e:c8:7a brd ff:ff:ff:ff:ff:ff link-netnsid 4
+19: veth3bc8ffa@if18: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:7f:7b:29:ae:1e brd ff:ff:ff:ff:ff:ff link-netnsid 5
+21: veth440e1d4@if20: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ba:71:50:f4:a1:7e brd ff:ff:ff:ff:ff:ff link-netnsid 11
+23: vethbb5dc74@if22: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 92:3c:fc:1e:85:92 brd ff:ff:ff:ff:ff:ff link-netnsid 8
+25: veth2507aac@if24: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6a:05:79:48:04:95 brd ff:ff:ff:ff:ff:ff link-netnsid 12
+27: veth837f6d0@if26: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 42:c9:21:d3:ff:ad brd ff:ff:ff:ff:ff:ff link-netnsid 9
+29: vetha341828@if28: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 3e:c9:1e:42:bb:90 brd ff:ff:ff:ff:ff:ff link-netnsid 10
+31: vethb800f44@if30: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 5a:3e:f3:db:67:3e brd ff:ff:ff:ff:ff:ff link-netnsid 15
+33: veth20959a9@if32: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 56:9c:ed:f2:1f:6f brd ff:ff:ff:ff:ff:ff link-netnsid 7
+37: vethf909f5b@if36: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 1e:67:87:81:4a:a3 brd ff:ff:ff:ff:ff:ff link-netnsid 14
+39: veth9e66b10@if38: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ee:b0:89:b7:14:f3 brd ff:ff:ff:ff:ff:ff link-netnsid 16
+41: vethd7d85b7@if40: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ea:c9:c3:68:b0:02 brd ff:ff:ff:ff:ff:ff link-netnsid 18
+43: veth2012fab@if42: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 46:e2:26:24:10:a2 brd ff:ff:ff:ff:ff:ff link-netnsid 21
+45: veth43f8acb@if44: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:b9:c4:ad:11:22 brd ff:ff:ff:ff:ff:ff link-netnsid 17
+47: veth03e00ea@if46: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ce:31:06:e7:8a:20 brd ff:ff:ff:ff:ff:ff link-netnsid 24
+49: vethfb65067@if48: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 3e:a7:7d:13:80:1b brd ff:ff:ff:ff:ff:ff link-netnsid 20
+51: vethc5efc35@if50: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 1a:0b:0f:39:d1:a3 brd ff:ff:ff:ff:ff:ff link-netnsid 22
+53: veth38d26ce@if52: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether fe:24:f0:e2:34:1d brd ff:ff:ff:ff:ff:ff link-netnsid 26
+57: veth0fd3f81@if56: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 42:93:dc:b0:61:1d brd ff:ff:ff:ff:ff:ff link-netnsid 19
+59: veth37615c4@if58: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8e:f5:93:65:99:21 brd ff:ff:ff:ff:ff:ff link-netnsid 25
+391: veth93fd4b0@if390: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6a:26:c3:4a:15:1a brd ff:ff:ff:ff:ff:ff link-netnsid 45
+393: veth6f5c4f3@if392: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 36:d2:53:c9:c1:2f brd ff:ff:ff:ff:ff:ff link-netnsid 46
+395: veth5ef5148@if394: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 4a:7c:9d:83:d2:c4 brd ff:ff:ff:ff:ff:ff link-netnsid 47
+397: vethfaace8c@if396: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ce:e2:98:6c:a0:5a brd ff:ff:ff:ff:ff:ff link-netnsid 51
+399: vethc7e601f@if398: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ee:8f:13:76:a5:2a brd ff:ff:ff:ff:ff:ff link-netnsid 49
+401: vethd0f5d97@if400: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether ba:91:48:39:ff:f7 brd ff:ff:ff:ff:ff:ff link-netnsid 50
+403: veth7a7cede@if402: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether fe:15:a8:bc:c1:f2 brd ff:ff:ff:ff:ff:ff link-netnsid 48
+405: veth7ab0869@if404: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 0e:16:fe:37:cc:8b brd ff:ff:ff:ff:ff:ff link-netnsid 52
+149: veth88e4415@if148: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 9e:2d:af:5a:72:8b brd ff:ff:ff:ff:ff:ff link-netnsid 35
+407: veth1b4f478@if406: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8a:09:a4:1b:91:7a brd ff:ff:ff:ff:ff:ff link-netnsid 54
+151: veth3e27d38@if150: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether e2:02:bc:4e:fa:9c brd ff:ff:ff:ff:ff:ff link-netnsid 36
+409: vetha9ff283@if408: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether b2:96:ac:64:3b:cb brd ff:ff:ff:ff:ff:ff link-netnsid 53
+411: veth96ddb20@if410: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 8a:5d:84:1a:a7:13 brd ff:ff:ff:ff:ff:ff link-netnsid 55
+155: vethbceb9d1@if154: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 16:7f:4d:56:a4:bb brd ff:ff:ff:ff:ff:ff link-netnsid 37
+413: veth9148331@if412: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 6e:bd:8d:08:9e:d7 brd ff:ff:ff:ff:ff:ff link-netnsid 56
+415: vethbd3b29d@if414: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 36:dd:80:db:b1:ad brd ff:ff:ff:ff:ff:ff link-netnsid 57
+417: veth9457570@if416: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether be:aa:c1:91:c1:2c brd ff:ff:ff:ff:ff:ff link-netnsid 58
+419: veth4293385@if418: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether 2e:9f:ce:f3:a1:ff brd ff:ff:ff:ff:ff:ff link-netnsid 59
+255: vethee88a39@if254: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master docker0 state UP group default 
+    link/ether a2:9a:87:f1:1a:d8 brd ff:ff:ff:ff:ff:ff link-netnsid 13
+
+END SSH
+
+I0404 21:35:11.734678   64779 ssh_runner.go:195] Run: curl -sS -m 2 https://k8s.gcr.io/
+I0404 21:35:11.734686   64779 ssh_runner.go:195] Run: systemctl --version
+I0404 21:35:11.734697   64779 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:49394 SSHKeyPath:/Users/rismanda.kusumadewi/.minikube/machines/minikube/id_rsa Username:docker}
+I0404 21:35:11.736711   64779 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:49394 SSHKeyPath:/Users/rismanda.kusumadewi/.minikube/machines/minikube/id_rsa Username:docker}
+I0404 21:35:12.949931   64779 ssh_runner.go:235] Completed: systemctl --version: (1.215248712s)
+I0404 21:35:12.950209   64779 preload.go:132] Checking if preload exists for k8s version v1.23.3 and runtime docker
+I0404 21:35:12.951094   64779 ssh_runner.go:195] Run: docker images --format {{.Repository}}:{{.Tag}}
+I0404 21:35:13.286459   64779 ssh_runner.go:235] Completed: curl -sS -m 2 https://k8s.gcr.io/: (1.551783361s)
+I0404 21:35:14.186268   64779 ssh_runner.go:235] Completed: docker images --format {{.Repository}}:{{.Tag}}: (1.235175223s)
+I0404 21:35:14.186783   64779 docker.go:606] Got preloaded images: -- stdout --
+nginx:latest
+alpine:latest
+python:latest
+alpine:<none>
+perl:latest
+nginx:<none>
+busybox:latest
+us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0
+k8s.gcr.io/kube-apiserver:v1.23.3
+k8s.gcr.io/kube-controller-manager:v1.23.3
+k8s.gcr.io/kube-proxy:v1.23.3
+k8s.gcr.io/kube-scheduler:v1.23.3
+k8s.gcr.io/ingress-nginx/controller:<none>
+k8s.gcr.io/etcd:3.5.1-0
+k8s.gcr.io/ingress-nginx/kube-webhook-certgen:<none>
+k8s.gcr.io/coredns/coredns:v1.8.6
+k8s.gcr.io/pause:3.6
+kubernetesui/dashboard:v2.3.1
+kubernetesui/metrics-scraper:v1.0.7
+gcr.io/k8s-minikube/storage-provisioner:v5
+k8s.gcr.io/metrics-server/metrics-server:<none>
+khannedy/nodejs-web:1
+khannedy/nodejs-env:latest
+polinux/stress:latest
+nginx:1.14.2
+busybox:1.28
+k8s.gcr.io/nginx-slim:0.8
+k8s.gcr.io/echoserver:1.4
+
+-- /stdout --
+I0404 21:35:14.187125   64779 docker.go:537] Images already preloaded, skipping extraction
+I0404 21:35:14.187834   64779 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0404 21:35:14.381877   64779 ssh_runner.go:195] Run: sudo systemctl cat docker.service
+I0404 21:35:14.569022   64779 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service containerd
+I0404 21:35:15.026761   64779 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service crio
+I0404 21:35:15.238030   64779 ssh_runner.go:195] Run: /bin/bash -c "sudo mkdir -p /etc && printf %!s(MISSING) "runtime-endpoint: unix:///var/run/dockershim.sock
+image-endpoint: unix:///var/run/dockershim.sock
+" | sudo tee /etc/crictl.yaml"
+I0404 21:35:15.811206   64779 ssh_runner.go:195] Run: sudo systemctl unmask docker.service
+I0404 21:35:37.225612   64779 ssh_runner.go:235] Completed: sudo systemctl unmask docker.service: (21.414733926s)
+I0404 21:35:37.226322   64779 ssh_runner.go:195] Run: sudo systemctl enable docker.socket
+I0404 21:35:42.539573   64779 ssh_runner.go:235] Completed: sudo systemctl enable docker.socket: (5.313289128s)
+I0404 21:35:42.539702   64779 ssh_runner.go:195] Run: sudo systemctl daemon-reload
+I0404 21:35:45.900764   64779 ssh_runner.go:235] Completed: sudo systemctl daemon-reload: (3.361099451s)
+I0404 21:35:45.901528   64779 ssh_runner.go:195] Run: sudo systemctl start docker
+I0404 21:35:46.003095   64779 ssh_runner.go:195] Run: docker version --format {{.Server.Version}}
+I0404 21:35:46.387394   64779 ssh_runner.go:195] Run: docker version --format {{.Server.Version}}
+I0404 21:35:47.305546   64779 out.go:203] 🐳  Preparing Kubernetes v1.23.3 on Docker 20.10.12 ...
+I0404 21:35:47.899137   64779 ssh_runner.go:195] Run: grep 192.168.59.1	host.minikube.internal$ /etc/hosts
+I0404 21:35:47.927552   64779 out.go:176]     ▪ kubelet.housekeeping-interval=5m
+I0404 21:35:47.927977   64779 preload.go:132] Checking if preload exists for k8s version v1.23.3 and runtime docker
+I0404 21:35:47.928163   64779 ssh_runner.go:195] Run: docker images --format {{.Repository}}:{{.Tag}}
+I0404 21:35:48.605739   64779 docker.go:606] Got preloaded images: -- stdout --
+nginx:latest
+alpine:latest
+python:latest
+alpine:<none>
+perl:latest
+nginx:<none>
+busybox:latest
+us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0
+k8s.gcr.io/kube-apiserver:v1.23.3
+k8s.gcr.io/kube-scheduler:v1.23.3
+k8s.gcr.io/kube-proxy:v1.23.3
+k8s.gcr.io/kube-controller-manager:v1.23.3
+k8s.gcr.io/ingress-nginx/controller:<none>
+k8s.gcr.io/etcd:3.5.1-0
+k8s.gcr.io/ingress-nginx/kube-webhook-certgen:<none>
+k8s.gcr.io/coredns/coredns:v1.8.6
+k8s.gcr.io/pause:3.6
+kubernetesui/dashboard:v2.3.1
+kubernetesui/metrics-scraper:v1.0.7
+gcr.io/k8s-minikube/storage-provisioner:v5
+k8s.gcr.io/metrics-server/metrics-server:<none>
+khannedy/nodejs-web:1
+khannedy/nodejs-env:latest
+polinux/stress:latest
+nginx:1.14.2
+busybox:1.28
+k8s.gcr.io/nginx-slim:0.8
+k8s.gcr.io/echoserver:1.4
+
+-- /stdout --
+I0404 21:35:48.605766   64779 docker.go:537] Images already preloaded, skipping extraction
+I0404 21:35:48.606183   64779 ssh_runner.go:195] Run: docker images --format {{.Repository}}:{{.Tag}}
+I0404 21:35:48.886339   64779 docker.go:606] Got preloaded images: -- stdout --
+nginx:latest
+alpine:latest
+python:latest
+alpine:<none>
+perl:latest
+nginx:<none>
+busybox:latest
+us-docker.pkg.dev/google-samples/containers/gke/hello-app:2.0
+k8s.gcr.io/kube-apiserver:v1.23.3
+k8s.gcr.io/kube-proxy:v1.23.3
+k8s.gcr.io/kube-controller-manager:v1.23.3
+k8s.gcr.io/kube-scheduler:v1.23.3
+k8s.gcr.io/ingress-nginx/controller:<none>
+k8s.gcr.io/etcd:3.5.1-0
+k8s.gcr.io/ingress-nginx/kube-webhook-certgen:<none>
+k8s.gcr.io/coredns/coredns:v1.8.6
+k8s.gcr.io/pause:3.6
+kubernetesui/dashboard:v2.3.1
+kubernetesui/metrics-scraper:v1.0.7
+gcr.io/k8s-minikube/storage-provisioner:v5
+k8s.gcr.io/metrics-server/metrics-server:<none>
+khannedy/nodejs-web:1
+khannedy/nodejs-env:latest
+polinux/stress:latest
+nginx:1.14.2
+busybox:1.28
+k8s.gcr.io/nginx-slim:0.8
+k8s.gcr.io/echoserver:1.4
+
+-- /stdout --
+I0404 21:35:48.886751   64779 cache_images.go:84] Images are preloaded, skipping loading
+I0404 21:35:48.887283   64779 ssh_runner.go:195] Run: docker info --format {{.CgroupDriver}}
+I0404 21:35:49.056440   64779 cni.go:93] Creating CNI manager for ""
+I0404 21:35:49.056470   64779 cni.go:167] CNI unnecessary in this configuration, recommending no CNI
+I0404 21:35:49.057575   64779 kubeadm.go:87] Using pod CIDR: 10.244.0.0/16
+I0404 21:35:49.057689   64779 kubeadm.go:158] kubeadm options: {CertDir:/var/lib/minikube/certs ServiceCIDR:10.96.0.0/12 PodSubnet:10.244.0.0/16 AdvertiseAddress:192.168.59.100 APIServerPort:8443 KubernetesVersion:v1.23.3 EtcdDataDir:/var/lib/minikube/etcd EtcdExtraArgs:map[] ClusterName:minikube NodeName:minikube DNSDomain:cluster.local CRISocket:/var/run/dockershim.sock ImageRepository: ComponentOptions:[{Component:apiServer ExtraArgs:map[enable-admission-plugins:NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,DefaultTolerationSeconds,NodeRestriction,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota] Pairs:map[certSANs:["127.0.0.1", "localhost", "192.168.59.100"]]} {Component:controllerManager ExtraArgs:map[allocate-node-cidrs:true leader-elect:false] Pairs:map[]} {Component:scheduler ExtraArgs:map[leader-elect:false] Pairs:map[]}] FeatureArgs:map[] NoTaintMaster:true NodeIP:192.168.59.100 CgroupDriver:systemd ClientCAFile:/var/lib/minikube/certs/ca.crt StaticPodPath:/etc/kubernetes/manifests ControlPlaneAddress:control-plane.minikube.internal KubeProxyOptions:map[]}
+I0404 21:35:49.058477   64779 kubeadm.go:162] kubeadm config:
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: InitConfiguration
+localAPIEndpoint:
+  advertiseAddress: 192.168.59.100
+  bindPort: 8443
+bootstrapTokens:
+  - groups:
+      - system:bootstrappers:kubeadm:default-node-token
+    ttl: 24h0m0s
+    usages:
+      - signing
+      - authentication
+nodeRegistration:
+  criSocket: /var/run/dockershim.sock
+  name: "minikube"
+  kubeletExtraArgs:
+    node-ip: 192.168.59.100
+  taints: []
+---
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: ClusterConfiguration
+apiServer:
+  certSANs: ["127.0.0.1", "localhost", "192.168.59.100"]
+  extraArgs:
+    enable-admission-plugins: "NamespaceLifecycle,LimitRanger,ServiceAccount,DefaultStorageClass,DefaultTolerationSeconds,NodeRestriction,MutatingAdmissionWebhook,ValidatingAdmissionWebhook,ResourceQuota"
+controllerManager:
+  extraArgs:
+    allocate-node-cidrs: "true"
+    leader-elect: "false"
+scheduler:
+  extraArgs:
+    leader-elect: "false"
+certificatesDir: /var/lib/minikube/certs
+clusterName: mk
+controlPlaneEndpoint: control-plane.minikube.internal:8443
+etcd:
+  local:
+    dataDir: /var/lib/minikube/etcd
+    extraArgs:
+      proxy-refresh-interval: "70000"
+kubernetesVersion: v1.23.3
+networking:
+  dnsDomain: cluster.local
+  podSubnet: "10.244.0.0/16"
+  serviceSubnet: 10.96.0.0/12
+---
+apiVersion: kubelet.config.k8s.io/v1beta1
+kind: KubeletConfiguration
+authentication:
+  x509:
+    clientCAFile: /var/lib/minikube/certs/ca.crt
+cgroupDriver: systemd
+clusterDomain: "cluster.local"
+# disable disk resource management by default
+imageGCHighThresholdPercent: 100
+evictionHard:
+  nodefs.available: "0%!"(MISSING)
+  nodefs.inodesFree: "0%!"(MISSING)
+  imagefs.available: "0%!"(MISSING)
+failSwapOn: false
+staticPodPath: /etc/kubernetes/manifests
+---
+apiVersion: kubeproxy.config.k8s.io/v1alpha1
+kind: KubeProxyConfiguration
+clusterCIDR: "10.244.0.0/16"
+metricsBindAddress: 0.0.0.0:10249
+conntrack:
+  maxPerCore: 0
+# Skip setting "net.netfilter.nf_conntrack_tcp_timeout_established"
+  tcpEstablishedTimeout: 0s
+# Skip setting "net.netfilter.nf_conntrack_tcp_timeout_close"
+  tcpCloseWaitTimeout: 0s
+
+I0404 21:35:49.059500   64779 kubeadm.go:936] kubelet [Unit]
+Wants=docker.socket
+
+[Service]
+ExecStart=
+ExecStart=/var/lib/minikube/binaries/v1.23.3/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --config=/var/lib/kubelet/config.yaml --container-runtime=docker --hostname-override=minikube --housekeeping-interval=5m --kubeconfig=/etc/kubernetes/kubelet.conf --node-ip=192.168.59.100
+
+[Install]
+ config:
+{KubernetesVersion:v1.23.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin: FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: ExtraOptions:[{Component:kubelet Key:housekeeping-interval Value:5m}] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:}
+I0404 21:35:49.059650   64779 ssh_runner.go:195] Run: sudo ls /var/lib/minikube/binaries/v1.23.3
+I0404 21:35:49.069559   64779 binaries.go:44] Found k8s binaries, skipping transfer
+I0404 21:35:49.069681   64779 ssh_runner.go:195] Run: sudo mkdir -p /etc/systemd/system/kubelet.service.d /lib/systemd/system /var/tmp/minikube
+I0404 21:35:49.128107   64779 ssh_runner.go:362] scp memory --> /etc/systemd/system/kubelet.service.d/10-kubeadm.conf (363 bytes)
+I0404 21:35:49.276895   64779 ssh_runner.go:362] scp memory --> /lib/systemd/system/kubelet.service (352 bytes)
+I0404 21:35:49.346316   64779 ssh_runner.go:362] scp memory --> /var/tmp/minikube/kubeadm.yaml.new (2035 bytes)
+I0404 21:35:49.470281   64779 ssh_runner.go:195] Run: grep 192.168.59.100	control-plane.minikube.internal$ /etc/hosts
+I0404 21:35:49.489061   64779 certs.go:54] Setting up /Users/rismanda.kusumadewi/.minikube/profiles/minikube for IP: 192.168.59.100
+I0404 21:35:49.489877   64779 certs.go:182] skipping minikubeCA CA generation: /Users/rismanda.kusumadewi/.minikube/ca.key
+I0404 21:35:49.490496   64779 certs.go:182] skipping proxyClientCA CA generation: /Users/rismanda.kusumadewi/.minikube/proxy-client-ca.key
+I0404 21:35:49.491276   64779 certs.go:298] skipping minikube-user signed cert generation: /Users/rismanda.kusumadewi/.minikube/profiles/minikube/client.key
+I0404 21:35:49.491716   64779 certs.go:298] skipping minikube signed cert generation: /Users/rismanda.kusumadewi/.minikube/profiles/minikube/apiserver.key.ee221796
+I0404 21:35:49.492230   64779 certs.go:298] skipping aggregator signed cert generation: /Users/rismanda.kusumadewi/.minikube/profiles/minikube/proxy-client.key
+I0404 21:35:49.493242   64779 certs.go:388] found cert: /Users/rismanda.kusumadewi/.minikube/certs/Users/rismanda.kusumadewi/.minikube/certs/ca-key.pem (1679 bytes)
+I0404 21:35:49.493723   64779 certs.go:388] found cert: /Users/rismanda.kusumadewi/.minikube/certs/Users/rismanda.kusumadewi/.minikube/certs/ca.pem (1111 bytes)
+I0404 21:35:49.494102   64779 certs.go:388] found cert: /Users/rismanda.kusumadewi/.minikube/certs/Users/rismanda.kusumadewi/.minikube/certs/cert.pem (1155 bytes)
+I0404 21:35:49.494443   64779 certs.go:388] found cert: /Users/rismanda.kusumadewi/.minikube/certs/Users/rismanda.kusumadewi/.minikube/certs/key.pem (1679 bytes)
+I0404 21:35:49.511931   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/profiles/minikube/apiserver.crt --> /var/lib/minikube/certs/apiserver.crt (1399 bytes)
+I0404 21:35:49.671553   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/profiles/minikube/apiserver.key --> /var/lib/minikube/certs/apiserver.key (1675 bytes)
+I0404 21:35:49.827888   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/profiles/minikube/proxy-client.crt --> /var/lib/minikube/certs/proxy-client.crt (1147 bytes)
+I0404 21:35:49.882042   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/profiles/minikube/proxy-client.key --> /var/lib/minikube/certs/proxy-client.key (1679 bytes)
+I0404 21:35:49.965254   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/ca.crt --> /var/lib/minikube/certs/ca.crt (1111 bytes)
+I0404 21:35:50.080873   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/ca.key --> /var/lib/minikube/certs/ca.key (1679 bytes)
+I0404 21:35:50.184690   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/proxy-client-ca.crt --> /var/lib/minikube/certs/proxy-client-ca.crt (1119 bytes)
+I0404 21:35:50.323975   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/proxy-client-ca.key --> /var/lib/minikube/certs/proxy-client-ca.key (1675 bytes)
+I0404 21:35:50.446774   64779 ssh_runner.go:362] scp /Users/rismanda.kusumadewi/.minikube/ca.crt --> /usr/share/ca-certificates/minikubeCA.pem (1111 bytes)
+I0404 21:35:50.629189   64779 ssh_runner.go:362] scp memory --> /var/lib/minikube/kubeconfig (738 bytes)
+I0404 21:35:50.738697   64779 ssh_runner.go:195] Run: openssl version
+I0404 21:35:50.772160   64779 ssh_runner.go:195] Run: sudo /bin/bash -c "test -s /usr/share/ca-certificates/minikubeCA.pem && ln -fs /usr/share/ca-certificates/minikubeCA.pem /etc/ssl/certs/minikubeCA.pem"
+I0404 21:35:50.820819   64779 ssh_runner.go:195] Run: ls -la /usr/share/ca-certificates/minikubeCA.pem
+I0404 21:35:50.857221   64779 certs.go:431] hashing: -rw-r--r-- 1 root root 1111 Mar 24 02:52 /usr/share/ca-certificates/minikubeCA.pem
+I0404 21:35:50.857356   64779 ssh_runner.go:195] Run: openssl x509 -hash -noout -in /usr/share/ca-certificates/minikubeCA.pem
+I0404 21:35:50.880909   64779 ssh_runner.go:195] Run: sudo /bin/bash -c "test -L /etc/ssl/certs/b5213941.0 || ln -fs /etc/ssl/certs/minikubeCA.pem /etc/ssl/certs/b5213941.0"
+I0404 21:35:50.951215   64779 kubeadm.go:391] StartCluster: {Name:minikube KeepContext:false EmbedCerts:false MinikubeISO:https://storage.googleapis.com/minikube/iso/minikube-v1.25.2.iso KicBaseImage:gcr.io/k8s-minikube/kicbase:v0.0.30@sha256:02c921df998f95e849058af14de7045efc3954d90320967418a0d1f182bbc0b2 Memory:2200 CPUs:2 DiskSize:20000 VMDriver: Driver:virtualbox HyperkitVpnKitSock: HyperkitVSockPorts:[] DockerEnv:[] ContainerVolumeMounts:[] InsecureRegistry:[] RegistryMirror:[] HostOnlyCIDR:192.168.59.1/24 HypervVirtualSwitch: HypervUseExternalSwitch:false HypervExternalAdapter: KVMNetwork:default KVMQemuURI:qemu:///system KVMGPU:false KVMHidden:false KVMNUMACount:1 DockerOpt:[] DisableDriverMounts:false NFSShare:[] NFSSharesRoot:/nfsshares UUID: NoVTXCheck:false DNSProxy:false HostDNSResolver:true HostOnlyNicType:virtio NatNicType:virtio SSHIPAddress: SSHUser:root SSHKey: SSHPort:22 KubernetesConfig:{KubernetesVersion:v1.23.3 ClusterName:minikube Namespace:default APIServerName:minikubeCA APIServerNames:[] APIServerIPs:[] DNSDomain:cluster.local ContainerRuntime:docker CRISocket: NetworkPlugin: FeatureGates: ServiceCIDR:10.96.0.0/12 ImageRepository: LoadBalancerStartIP: LoadBalancerEndIP: CustomIngressCert: ExtraOptions:[{Component:kubelet Key:housekeeping-interval Value:5m}] ShouldLoadCachedImages:true EnableDefaultCNI:false CNI: NodeIP: NodePort:8443 NodeName:} Nodes:[{Name: IP:192.168.59.100 Port:8443 KubernetesVersion:v1.23.3 ContainerRuntime:docker ControlPlane:true Worker:true}] Addons:map[ambassador:false auto-pause:false csi-hostpath-driver:false dashboard:true default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false helm-tiller:false ingress:true ingress-dns:false istio:false istio-provisioner:false kong:false kubevirt:false logviewer:false metallb:false metrics-server:true nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false portainer:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false volumesnapshots:false] CustomAddonImages:map[IngressController:ingress-nginx/controller:v1.1.1@sha256:0bc88eb15f9e7f84e8e56c14fa5735aaa488b840983f87bd79b1054190e660de KubeWebhookCertgenCreate:k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1@sha256:64d8c73dca984af206adf9d6d7e46aa550362b1d7a01f3a0a91b20cc67868660 KubeWebhookCertgenPatch:k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1@sha256:64d8c73dca984af206adf9d6d7e46aa550362b1d7a01f3a0a91b20cc67868660 MetricsServer:metrics-server/metrics-server:v0.4.2@sha256:dbc33d7d35d2a9cc5ab402005aa7a0d13be6192f3550c7d42cba8d2d5e3a5d62] CustomAddonRegistries:map[] VerifyComponents:map[apiserver:false apps_running:false default_sa:false extra:false kubelet:false node_ready:false system_pods:false] StartHostTimeout:6m0s ScheduledStop:<nil> ExposedPorts:[] ListenAddress: Network: MultiNodeRequested:false ExtraDisks:0 CertExpiration:26280h0m0s Mount:false MountString:/Users:/minikube-host Mount9PVersion:9p2000.L MountGID:docker MountIP: MountMSize:262144 MountOptions:[] MountPort:0 MountType:9p MountUID:docker BinaryMirror: DisableOptimizations:false}
+I0404 21:35:50.951441   64779 ssh_runner.go:195] Run: docker ps --filter status=paused --filter=name=k8s_.*_(kube-system)_ --format={{.ID}}
+I0404 21:35:51.692858   64779 ssh_runner.go:195] Run: sudo ls /var/lib/kubelet/kubeadm-flags.env /var/lib/kubelet/config.yaml /var/lib/minikube/etcd
+I0404 21:35:51.756081   64779 kubeadm.go:402] found existing configuration files, will attempt cluster restart
+I0404 21:35:51.756109   64779 kubeadm.go:601] restartCluster start
+I0404 21:35:51.756236   64779 ssh_runner.go:195] Run: sudo test -d /data/minikube
+I0404 21:35:51.812966   64779 kubeadm.go:127] /data/minikube skipping compat symlinks: sudo test -d /data/minikube: Process exited with status 1
+stdout:
+
+stderr:
+I0404 21:35:51.815866   64779 kubeconfig.go:92] found "minikube" server: "https://192.168.59.100:8443"
+I0404 21:35:51.832899   64779 ssh_runner.go:195] Run: sudo diff -u /var/tmp/minikube/kubeadm.yaml /var/tmp/minikube/kubeadm.yaml.new
+I0404 21:35:51.887099   64779 api_server.go:165] Checking apiserver status ...
+I0404 21:35:51.887203   64779 ssh_runner.go:195] Run: sudo pgrep -xnf kube-apiserver.*minikube.*
+I0404 21:35:51.981396   64779 ssh_runner.go:195] Run: sudo egrep ^[0-9]+:freezer: /proc/3469/cgroup
+I0404 21:35:52.024596   64779 api_server.go:181] apiserver freezer: "6:freezer:/kubepods.slice/kubepods-burstable.slice/kubepods-burstable-pod76b93a5d53db623424e1f1e74b94f7c2.slice/docker-dd43061cd101e4a289ff72a74b21eace2660199dff5f42cbba43fa4b7c5640d5.scope"
+I0404 21:35:52.024750   64779 ssh_runner.go:195] Run: sudo cat /sys/fs/cgroup/freezer/kubepods.slice/kubepods-burstable.slice/kubepods-burstable-pod76b93a5d53db623424e1f1e74b94f7c2.slice/docker-dd43061cd101e4a289ff72a74b21eace2660199dff5f42cbba43fa4b7c5640d5.scope/freezer.state
+I0404 21:35:52.097326   64779 api_server.go:203] freezer state: "THAWED"
+I0404 21:35:52.097347   64779 api_server.go:240] Checking apiserver healthz at https://192.168.59.100:8443/healthz ...
+I0404 21:35:53.129779   64779 api_server.go:266] https://192.168.59.100:8443/healthz returned 200:
+ok
+I0404 21:35:53.961415   64779 system_pods.go:86] 8 kube-system pods found
+I0404 21:35:53.976296   64779 system_pods.go:89] "coredns-64897985d-m9j44" [db32ad31-d5a5-4176-96db-40d119a8d04c] Running / Ready:ContainersNotReady (containers with unready status: [coredns]) / ContainersReady:ContainersNotReady (containers with unready status: [coredns])
+I0404 21:35:53.976306   64779 system_pods.go:89] "etcd-minikube" [82fd6bf4-6863-4972-9930-b59e14d5f4fb] Running
+I0404 21:35:53.976312   64779 system_pods.go:89] "kube-apiserver-minikube" [50fa6a88-8257-48a5-9686-169017ccc910] Running
+I0404 21:35:53.976317   64779 system_pods.go:89] "kube-controller-manager-minikube" [b8fc1c1e-a40b-41c7-9fb0-65e68f9c9118] Running
+I0404 21:35:53.976321   64779 system_pods.go:89] "kube-proxy-nl66w" [ec9d999e-cb56-4a86-8766-860d53d5694a] Running
+I0404 21:35:53.976325   64779 system_pods.go:89] "kube-scheduler-minikube" [6828fcd6-34fe-4cf8-a4ab-2093ab5f7406] Running
+I0404 21:35:53.976331   64779 system_pods.go:89] "metrics-server-6b76bd68b6-kbxfc" [9601ad76-8557-4520-84b6-1ffbae6ef6e1] Running / Ready:ContainersNotReady (containers with unready status: [metrics-server]) / ContainersReady:ContainersNotReady (containers with unready status: [metrics-server])
+I0404 21:35:53.976337   64779 system_pods.go:89] "storage-provisioner" [6a78792f-0252-4059-b491-713ac973e30f] Running / Ready:ContainersNotReady (containers with unready status: [storage-provisioner]) / ContainersReady:ContainersNotReady (containers with unready status: [storage-provisioner])
+I0404 21:35:54.932346   64779 api_server.go:140] control plane version: v1.23.3
+I0404 21:35:54.932365   64779 kubeadm.go:595] The running cluster does not require reconfiguration: 192.168.59.100
+I0404 21:35:54.932378   64779 kubeadm.go:649] Taking a shortcut, as the cluster seems to be properly configured
+I0404 21:35:54.932385   64779 kubeadm.go:605] restartCluster took 3.176323408s
+I0404 21:35:54.932389   64779 kubeadm.go:393] StartCluster complete in 3.981263065s
+I0404 21:35:54.932403   64779 settings.go:142] acquiring lock: {Name:mkc52045acafc05554cbb964d2df64ce46a38bd5 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0404 21:35:54.932625   64779 settings.go:150] Updating kubeconfig:  /Users/rismanda.kusumadewi/.kube/config
+I0404 21:35:54.936525   64779 lock.go:35] WriteFile acquiring /Users/rismanda.kusumadewi/.kube/config: {Name:mk072fe856a42084b92389d4809b18f267792d64 Clock:{} Delay:500ms Timeout:1m0s Cancel:<nil>}
+I0404 21:35:55.894818   64779 kapi.go:244] deployment "coredns" in namespace "kube-system" and context "minikube" rescaled to 1
+I0404 21:35:55.895668   64779 global.go:111] Querying for installed drivers using PATH=/Users/rismanda.kusumadewi/.minikube/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+I0404 21:35:55.896593   64779 global.go:119] hyperkit default: true priority: 8, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "hyperkit": executable file not found in $PATH Reason: Fix:Run 'brew install hyperkit' Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/hyperkit/ Version:}
+I0404 21:35:55.896672   64779 global.go:119] parallels default: true priority: 7, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "prlctl": executable file not found in $PATH Reason: Fix:Install Parallels Desktop for Mac Doc:https://minikube.sigs.k8s.io/docs/drivers/parallels/ Version:}
+I0404 21:35:55.896947   64779 global.go:119] podman default: true priority: 3, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "podman": executable file not found in $PATH Reason: Fix:Install Podman Doc:https://minikube.sigs.k8s.io/docs/drivers/podman/ Version:}
+I0404 21:35:55.896976   64779 global.go:119] ssh default: false priority: 4, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:}
+I0404 21:35:55.897347   64779 ssh_runner.go:195] Run: /bin/bash -c "sudo /var/lib/minikube/binaries/v1.23.3/kubectl --kubeconfig=/var/lib/minikube/kubeconfig -n kube-system get configmap coredns -o yaml"
+I0404 21:35:55.898944   64779 config.go:176] Loaded profile config "minikube": Driver=virtualbox, ContainerRuntime=docker, KubernetesVersion=v1.23.3
+I0404 21:35:55.898750   64779 addons.go:415] enableAddons start: toEnable=map[ambassador:false auto-pause:false csi-hostpath-driver:false dashboard:true default-storageclass:true efk:false freshpod:false gcp-auth:false gvisor:false helm-tiller:false ingress:true ingress-dns:false istio:false istio-provisioner:false kong:false kubevirt:false logviewer:false metallb:false metrics-server:true nvidia-driver-installer:false nvidia-gpu-device-plugin:false olm:false pod-security-policy:false portainer:false registry:false registry-aliases:false registry-creds:false storage-provisioner:true storage-provisioner-gluster:false volumesnapshots:false], additional=[]
+I0404 21:35:55.901157   64779 addons.go:65] Setting dashboard=true in profile "minikube"
+I0404 21:35:55.901180   64779 addons.go:153] Setting addon dashboard=true in "minikube"
+W0404 21:35:55.901187   64779 addons.go:165] addon dashboard should already be in state true
+I0404 21:35:55.901430   64779 addons.go:65] Setting default-storageclass=true in profile "minikube"
+I0404 21:35:55.901466   64779 addons_storage_classes.go:33] enableOrDisableStorageClasses default-storageclass=true on "minikube"
+I0404 21:35:55.901790   64779 addons.go:65] Setting storage-provisioner=true in profile "minikube"
+I0404 21:35:55.901815   64779 addons.go:153] Setting addon storage-provisioner=true in "minikube"
+W0404 21:35:55.901820   64779 addons.go:165] addon storage-provisioner should already be in state true
+I0404 21:35:55.901927   64779 host.go:66] Checking if "minikube" exists ...
+I0404 21:35:55.902874   64779 host.go:66] Checking if "minikube" exists ...
+I0404 21:35:55.905581   64779 addons.go:65] Setting ingress=true in profile "minikube"
+I0404 21:35:55.905603   64779 addons.go:153] Setting addon ingress=true in "minikube"
+W0404 21:35:55.905612   64779 addons.go:165] addon ingress should already be in state true
+I0404 21:35:55.905672   64779 host.go:66] Checking if "minikube" exists ...
+I0404 21:35:55.906763   64779 main.go:130] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0404 21:35:55.906794   64779 main.go:130] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0404 21:35:55.907519   64779 addons.go:65] Setting metrics-server=true in profile "minikube"
+I0404 21:35:55.907574   64779 addons.go:153] Setting addon metrics-server=true in "minikube"
+W0404 21:35:55.907579   64779 addons.go:165] addon metrics-server should already be in state true
+I0404 21:35:55.907720   64779 host.go:66] Checking if "minikube" exists ...
+I0404 21:35:55.908615   64779 main.go:130] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0404 21:35:55.909114   64779 main.go:130] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0404 21:35:55.909865   64779 main.go:130] libmachine: COMMAND: /usr/local/bin/VBoxManage showvminfo minikube --machinereadable
+I0404 21:35:55.993162   64779 virtualbox.go:136] virtual box version: 6.1.28r147628
+I0404 21:35:55.993212   64779 global.go:119] virtualbox default: true priority: 6, state: {Installed:true Healthy:true Running:false NeedsImprovement:false Error:<nil> Reason: Fix: Doc: Version:6.1.28r147628
+}
+I0404 21:35:55.993292   64779 global.go:119] vmware default: true priority: 7, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:exec: "docker-machine-driver-vmware": executable file not found in $PATH Reason: Fix:Install docker-machine-driver-vmware Doc:https://minikube.sigs.k8s.io/docs/reference/drivers/vmware/ Version:}
+I0404 21:35:55.996974   64779 global.go:119] vmwarefusion default: false priority: 1, state: {Installed:false Healthy:false Running:false NeedsImprovement:false Error:the 'vmwarefusion' driver is no longer available Reason: Fix:Switch to the newer 'vmware' driver by using '--driver=vmware'. This may require first deleting your existing cluster Doc:https://minikube.sigs.k8s.io/docs/drivers/vmware/ Version:}
+I0404 21:35:56.365883   64779 main.go:130] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+CfgFile="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2022-04-04T14:27:15.029000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="5be2952e-d4c7-40a4-ba0c-ec49d43838ec"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cfab47e0-9d61-4347-94db-9b23e8cfa941"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027C6E649"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,49394,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="0800275FDE90"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1649082457154
+GuestAdditionsFacility_VirtualBox System Service=50,1649082457550
+GuestAdditionsFacility_Seamless Mode=0,1649082457735
+GuestAdditionsFacility_Graphics Mode=0,1649082457093
+}
+I0404 21:35:56.365919   64779 main.go:130] libmachine: STDERR:
+{
+}
+I0404 21:35:56.374505   64779 out.go:176]     ▪ Using image kubernetesui/dashboard:v2.3.1
+I0404 21:35:56.373150   64779 main.go:130] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+CfgFile="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2022-04-04T14:27:15.029000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="5be2952e-d4c7-40a4-ba0c-ec49d43838ec"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cfab47e0-9d61-4347-94db-9b23e8cfa941"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027C6E649"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,49394,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="0800275FDE90"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1649082457154
+GuestAdditionsFacility_VirtualBox System Service=50,1649082457550
+GuestAdditionsFacility_Seamless Mode=0,1649082457735
+GuestAdditionsFacility_Graphics Mode=0,1649082457093
+}
+I0404 21:35:56.374561   64779 main.go:130] libmachine: STDERR:
+{
+}
+I0404 21:35:56.378490   64779 out.go:176]     ▪ Using image kubernetesui/metrics-scraper:v1.0.7
+I0404 21:35:56.378631   64779 addons.go:348] installing /etc/kubernetes/addons/dashboard-ns.yaml
+I0404 21:35:56.378640   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/dashboard-ns.yaml (759 bytes)
+I0404 21:35:56.378665   64779 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:49394 SSHKeyPath:/Users/rismanda.kusumadewi/.minikube/machines/minikube/id_rsa Username:docker}
+I0404 21:35:56.381325   64779 main.go:130] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+CfgFile="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2022-04-04T14:27:15.029000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="5be2952e-d4c7-40a4-ba0c-ec49d43838ec"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cfab47e0-9d61-4347-94db-9b23e8cfa941"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027C6E649"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,49394,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="0800275FDE90"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1649082457154
+GuestAdditionsFacility_VirtualBox System Service=50,1649082457550
+GuestAdditionsFacility_Seamless Mode=0,1649082457735
+GuestAdditionsFacility_Graphics Mode=0,1649082457093
+}
+I0404 21:35:56.381347   64779 main.go:130] libmachine: STDERR:
+{
+}
+I0404 21:35:56.385412   64779 out.go:176]     ▪ Using image gcr.io/k8s-minikube/storage-provisioner:v5
+I0404 21:35:56.385616   64779 addons.go:348] installing /etc/kubernetes/addons/storage-provisioner.yaml
+I0404 21:35:56.385623   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/storage-provisioner.yaml (2676 bytes)
+I0404 21:35:56.385634   64779 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:49394 SSHKeyPath:/Users/rismanda.kusumadewi/.minikube/machines/minikube/id_rsa Username:docker}
+I0404 21:35:56.394520   64779 main.go:130] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+CfgFile="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2022-04-04T14:27:15.029000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="5be2952e-d4c7-40a4-ba0c-ec49d43838ec"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cfab47e0-9d61-4347-94db-9b23e8cfa941"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027C6E649"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,49394,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="0800275FDE90"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1649082457154
+GuestAdditionsFacility_VirtualBox System Service=50,1649082457550
+GuestAdditionsFacility_Seamless Mode=0,1649082457735
+GuestAdditionsFacility_Graphics Mode=0,1649082457093
+}
+I0404 21:35:56.394694   64779 main.go:130] libmachine: STDERR:
+{
+}
+I0404 21:35:56.395927   64779 main.go:130] libmachine: STDOUT:
+{
+name="minikube"
+groups="/"
+ostype="Linux 2.6 / 3.x / 4.x (64-bit)"
+UUID="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+CfgFile="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.vbox"
+SnapFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Snapshots"
+LogFldr="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/Logs"
+hardwareuuid="a7828f53-2616-44fd-8a95-06e98f79f1a1"
+memory=2200
+pagefusion="off"
+vram=8
+cpuexecutioncap=100
+hpet="on"
+cpu-profile="host"
+chipset="piix3"
+firmware="BIOS"
+cpus=2
+pae="on"
+longmode="on"
+triplefaultreset="off"
+apic="on"
+x2apic="off"
+nested-hw-virt="off"
+cpuid-portability-level=0
+bootmenu="disabled"
+boot1="dvd"
+boot2="dvd"
+boot3="disk"
+boot4="none"
+acpi="on"
+ioapic="on"
+biosapic="apic"
+biossystemtimeoffset=0
+rtcuseutc="on"
+hwvirtex="on"
+nestedpaging="on"
+largepages="on"
+vtxvpid="on"
+vtxux="on"
+paravirtprovider="default"
+effparavirtprovider="kvm"
+VMState="running"
+VMStateChangeTime="2022-04-04T14:27:15.029000000"
+graphicscontroller="vboxvga"
+monitorcount=1
+accelerate3d="off"
+accelerate2dvideo="off"
+teleporterenabled="off"
+teleporterport=0
+teleporteraddress=""
+teleporterpassword=""
+tracing-enabled="off"
+tracing-allow-vm-access="off"
+tracing-config=""
+autostart-enabled="off"
+autostart-delay=0
+defaultfrontend=""
+vmprocpriority="default"
+storagecontrollername0="SATA"
+storagecontrollertype0="IntelAhci"
+storagecontrollerinstance0="0"
+storagecontrollermaxportcount0="30"
+storagecontrollerportcount0="30"
+storagecontrollerbootable0="on"
+"SATA-0-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/boot2docker.iso"
+"SATA-ImageUUID-0-0"="5be2952e-d4c7-40a4-ba0c-ec49d43838ec"
+"SATA-tempeject"="off"
+"SATA-IsEjected"="off"
+"SATA-1-0"="/Users/rismanda.kusumadewi/.minikube/machines/minikube/disk.vmdk"
+"SATA-ImageUUID-1-0"="cfab47e0-9d61-4347-94db-9b23e8cfa941"
+"SATA-2-0"="none"
+"SATA-3-0"="none"
+"SATA-4-0"="none"
+"SATA-5-0"="none"
+"SATA-6-0"="none"
+"SATA-7-0"="none"
+"SATA-8-0"="none"
+"SATA-9-0"="none"
+"SATA-10-0"="none"
+"SATA-11-0"="none"
+"SATA-12-0"="none"
+"SATA-13-0"="none"
+"SATA-14-0"="none"
+"SATA-15-0"="none"
+"SATA-16-0"="none"
+"SATA-17-0"="none"
+"SATA-18-0"="none"
+"SATA-19-0"="none"
+"SATA-20-0"="none"
+"SATA-21-0"="none"
+"SATA-22-0"="none"
+"SATA-23-0"="none"
+"SATA-24-0"="none"
+"SATA-25-0"="none"
+"SATA-26-0"="none"
+"SATA-27-0"="none"
+"SATA-28-0"="none"
+"SATA-29-0"="none"
+natnet1="nat"
+macaddress1="080027C6E649"
+cableconnected1="on"
+nic1="nat"
+nictype1="virtio"
+nicspeed1="0"
+mtu="0"
+sockSnd="64"
+sockRcv="64"
+tcpWndSnd="64"
+tcpWndRcv="64"
+Forwarding(0)="ssh,tcp,127.0.0.1,49394,,22"
+hostonlyadapter2="vboxnet0"
+macaddress2="0800275FDE90"
+cableconnected2="on"
+nic2="hostonly"
+nictype2="virtio"
+nicspeed2="0"
+nic3="none"
+nic4="none"
+nic5="none"
+nic6="none"
+nic7="none"
+nic8="none"
+hidpointing="ps2mouse"
+hidkeyboard="ps2kbd"
+uart1="off"
+uart2="off"
+uart3="off"
+uart4="off"
+lpt1="off"
+lpt2="off"
+audio="coreaudio"
+audio_out="off"
+audio_in="off"
+clipboard="disabled"
+draganddrop="disabled"
+SessionName="headless"
+VideoMode="720,400,0"@0,0 1
+vrde="off"
+usb="off"
+ehci="off"
+xhci="off"
+SharedFolderNameMachineMapping1="Users"
+SharedFolderPathMachineMapping1="/Users"
+VRDEActiveConnection="off"
+VRDEClients==0
+videocap="off"
+videocapaudio="off"
+capturescreens="0"
+capturefilename="/Users/rismanda.kusumadewi/.minikube/machines/minikube/minikube/minikube.webm"
+captureres="1024x768"
+capturevideorate=512
+capturevideofps=25
+captureopts=""
+GuestMemoryBalloon=0
+GuestOSType="Linux26_64"
+GuestAdditionsRunLevel=2
+GuestAdditionsVersion="5.2.42 r137960"
+GuestAdditionsFacility_VirtualBox Base Driver=50,1649082457154
+GuestAdditionsFacility_VirtualBox System Service=50,1649082457550
+GuestAdditionsFacility_Seamless Mode=0,1649082457735
+GuestAdditionsFacility_Graphics Mode=0,1649082457093
+}
+I0404 21:35:56.399106   64779 out.go:176]     ▪ Using image k8s.gcr.io/ingress-nginx/controller:v1.1.1
+I0404 21:35:56.399136   64779 main.go:130] libmachine: STDERR:
+{
+}
+I0404 21:35:56.401924   64779 out.go:176]     ▪ Using image k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
+I0404 21:35:56.405275   64779 out.go:176]     ▪ Using image k8s.gcr.io/metrics-server/metrics-server:v0.4.2
+I0404 21:35:56.405364   64779 addons.go:348] installing /etc/kubernetes/addons/metrics-apiservice.yaml
+I0404 21:35:56.405371   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/metrics-apiservice.yaml (396 bytes)
+I0404 21:35:56.405386   64779 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:49394 SSHKeyPath:/Users/rismanda.kusumadewi/.minikube/machines/minikube/id_rsa Username:docker}
+I0404 21:35:56.408241   64779 out.go:176]     ▪ Using image k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
+I0404 21:35:56.408571   64779 addons.go:348] installing /etc/kubernetes/addons/ingress-deploy.yaml
+I0404 21:35:56.408577   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/ingress-deploy.yaml (15567 bytes)
+I0404 21:35:56.408588   64779 sshutil.go:53] new ssh client: &{IP:127.0.0.1 Port:49394 SSHKeyPath:/Users/rismanda.kusumadewi/.minikube/machines/minikube/id_rsa Username:docker}
+I0404 21:35:56.716505   64779 addons.go:348] installing /etc/kubernetes/addons/dashboard-clusterrole.yaml
+I0404 21:35:56.716518   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/dashboard-clusterrole.yaml (1001 bytes)
+I0404 21:35:56.747142   64779 addons.go:348] installing /etc/kubernetes/addons/dashboard-clusterrolebinding.yaml
+I0404 21:35:56.747153   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/dashboard-clusterrolebinding.yaml (1018 bytes)
+I0404 21:35:56.878476   64779 ssh_runner.go:195] Run: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/ingress-deploy.yaml
+I0404 21:35:56.886726   64779 addons.go:348] installing /etc/kubernetes/addons/metrics-server-deployment.yaml
+I0404 21:35:56.886737   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/metrics-server-deployment.yaml (1931 bytes)
+I0404 21:35:57.096681   64779 ssh_runner.go:195] Run: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/storage-provisioner.yaml
+I0404 21:35:57.192757   64779 addons.go:348] installing /etc/kubernetes/addons/metrics-server-rbac.yaml
+I0404 21:35:57.192773   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/metrics-server-rbac.yaml (2042 bytes)
+I0404 21:35:57.216162   64779 addons.go:348] installing /etc/kubernetes/addons/dashboard-configmap.yaml
+I0404 21:35:57.216176   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/dashboard-configmap.yaml (837 bytes)
+I0404 21:35:57.327915   64779 addons.go:348] installing /etc/kubernetes/addons/dashboard-dp.yaml
+I0404 21:35:57.327928   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/dashboard-dp.yaml (4278 bytes)
+I0404 21:35:57.355536   64779 addons.go:348] installing /etc/kubernetes/addons/metrics-server-service.yaml
+I0404 21:35:57.355550   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/metrics-server-service.yaml (418 bytes)
+I0404 21:35:57.425399   64779 addons.go:348] installing /etc/kubernetes/addons/dashboard-role.yaml
+I0404 21:35:57.425412   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/dashboard-role.yaml (1724 bytes)
+I0404 21:35:57.435952   64779 ssh_runner.go:195] Run: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/metrics-apiservice.yaml -f /etc/kubernetes/addons/metrics-server-deployment.yaml -f /etc/kubernetes/addons/metrics-server-rbac.yaml -f /etc/kubernetes/addons/metrics-server-service.yaml
+I0404 21:35:57.479813   64779 addons.go:348] installing /etc/kubernetes/addons/dashboard-rolebinding.yaml
+I0404 21:35:57.479833   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/dashboard-rolebinding.yaml (1046 bytes)
+I0404 21:35:57.549367   64779 addons.go:348] installing /etc/kubernetes/addons/dashboard-sa.yaml
+I0404 21:35:57.549381   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/dashboard-sa.yaml (837 bytes)
+I0404 21:35:57.678025   64779 addons.go:348] installing /etc/kubernetes/addons/dashboard-secret.yaml
+I0404 21:35:57.678039   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/dashboard-secret.yaml (1389 bytes)
+W0404 21:35:57.773595   64779 docker.go:108] docker version returned error: exit status 1
+I0404 21:35:57.773649   64779 global.go:119] docker default: true priority: 9, state: {Installed:true Healthy:false Running:false NeedsImprovement:false Error:"docker version --format {{.Server.Os}}-{{.Server.Version}}" exit status 1: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running? Reason:PROVIDER_DOCKER_NOT_RUNNING Fix:Start the Docker service Doc:https://minikube.sigs.k8s.io/docs/drivers/docker/ Version:}
+I0404 21:35:57.773703   64779 start.go:208] Will wait 6m0s for node &{Name: IP:192.168.59.100 Port:8443 KubernetesVersion:v1.23.3 ContainerRuntime:docker ControlPlane:true Worker:true}
+I0404 21:35:57.885099   64779 out.go:176] 🔎  Verifying Kubernetes components...
+I0404 21:35:57.865054   64779 addons.go:348] installing /etc/kubernetes/addons/dashboard-svc.yaml
+I0404 21:35:57.885458   64779 ssh_runner.go:362] scp memory --> /etc/kubernetes/addons/dashboard-svc.yaml (1294 bytes)
+I0404 21:35:57.885320   64779 ssh_runner.go:195] Run: sudo systemctl is-active --quiet service kubelet
+I0404 21:35:58.466372   64779 ssh_runner.go:195] Run: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/dashboard-ns.yaml -f /etc/kubernetes/addons/dashboard-clusterrole.yaml -f /etc/kubernetes/addons/dashboard-clusterrolebinding.yaml -f /etc/kubernetes/addons/dashboard-configmap.yaml -f /etc/kubernetes/addons/dashboard-dp.yaml -f /etc/kubernetes/addons/dashboard-role.yaml -f /etc/kubernetes/addons/dashboard-rolebinding.yaml -f /etc/kubernetes/addons/dashboard-sa.yaml -f /etc/kubernetes/addons/dashboard-secret.yaml -f /etc/kubernetes/addons/dashboard-svc.yaml
+W0404 21:36:51.920087   64779 out.go:241] ❗  Enabling 'default-storageclass' returned an error: running callbacks: [Error making standard the default storage class: Error while marking storage class thin-disk as non-default: Timeout: request did not complete within requested timeout - context deadline exceeded]
+I0404 21:38:09.689066   64779 ssh_runner.go:235] Completed: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/ingress-deploy.yaml: (2m12.812699643s)
+I0404 21:38:09.689730   64779 ssh_runner.go:235] Completed: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/storage-provisioner.yaml: (2m12.594624177s)
+I0404 21:38:09.689771   64779 ssh_runner.go:235] Completed: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/metrics-apiservice.yaml -f /etc/kubernetes/addons/metrics-server-deployment.yaml -f /etc/kubernetes/addons/metrics-server-rbac.yaml -f /etc/kubernetes/addons/metrics-server-service.yaml: (2m12.255478752s)
+I0404 21:38:09.689862   64779 ssh_runner.go:235] Completed: sudo systemctl is-active --quiet service kubelet: (2m11.805944272s)
+W0404 21:38:09.690014   64779 addons.go:369] apply failed, will retry: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/ingress-deploy.yaml: Process exited with status 1
+stdout:
+
+stderr:
+Unable to connect to the server: net/http: TLS handshake timeout
+W0404 21:38:09.690039   64779 addons.go:369] apply failed, will retry: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/metrics-apiservice.yaml -f /etc/kubernetes/addons/metrics-server-deployment.yaml -f /etc/kubernetes/addons/metrics-server-rbac.yaml -f /etc/kubernetes/addons/metrics-server-service.yaml: Process exited with status 1
+stdout:
+
+stderr:
+Unable to connect to the server: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+W0404 21:38:09.690051   64779 addons.go:369] apply failed, will retry: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/storage-provisioner.yaml: Process exited with status 1
+stdout:
+
+stderr:
+Unable to connect to the server: context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+I0404 21:38:09.690433   64779 addons.go:386] Verifying addon ingress=true in "minikube"
+I0404 21:38:09.690461   64779 addons.go:386] Verifying addon metrics-server=true in "minikube"
+W0404 21:38:09.690569   64779 out.go:241] ❗  Enabling 'storage-provisioner' returned an error: running callbacks: [sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/storage-provisioner.yaml: Process exited with status 1
+stdout:
+
+stderr:
+Unable to connect to the server: context deadline exceeded (Client.Timeout exceeded while awaiting headers)
+]
+W0404 21:38:09.690612   64779 out.go:241] ❗  Enabling 'metrics-server' returned an error: running callbacks: [sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/metrics-apiservice.yaml -f /etc/kubernetes/addons/metrics-server-deployment.yaml -f /etc/kubernetes/addons/metrics-server-rbac.yaml -f /etc/kubernetes/addons/metrics-server-service.yaml: Process exited with status 1
+stdout:
+
+stderr:
+Unable to connect to the server: net/http: request canceled (Client.Timeout exceeded while awaiting headers)
+]
+I0404 21:38:09.690397   64779 kubeadm.go:485] skip waiting for components based on config.
+I0404 21:38:09.696937   64779 out.go:176] 🔎  Verifying ingress addon...
+I0404 21:38:09.697264   64779 node_conditions.go:102] verifying NodePressure condition ...
+I0404 21:38:09.690783   64779 ssh_runner.go:235] Completed: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/dashboard-ns.yaml -f /etc/kubernetes/addons/dashboard-clusterrole.yaml -f /etc/kubernetes/addons/dashboard-clusterrolebinding.yaml -f /etc/kubernetes/addons/dashboard-configmap.yaml -f /etc/kubernetes/addons/dashboard-dp.yaml -f /etc/kubernetes/addons/dashboard-role.yaml -f /etc/kubernetes/addons/dashboard-rolebinding.yaml -f /etc/kubernetes/addons/dashboard-sa.yaml -f /etc/kubernetes/addons/dashboard-secret.yaml -f /etc/kubernetes/addons/dashboard-svc.yaml: (2m11.226519432s)
+W0404 21:38:09.698914   64779 addons.go:369] apply failed, will retry: sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/dashboard-ns.yaml -f /etc/kubernetes/addons/dashboard-clusterrole.yaml -f /etc/kubernetes/addons/dashboard-clusterrolebinding.yaml -f /etc/kubernetes/addons/dashboard-configmap.yaml -f /etc/kubernetes/addons/dashboard-dp.yaml -f /etc/kubernetes/addons/dashboard-role.yaml -f /etc/kubernetes/addons/dashboard-rolebinding.yaml -f /etc/kubernetes/addons/dashboard-sa.yaml -f /etc/kubernetes/addons/dashboard-secret.yaml -f /etc/kubernetes/addons/dashboard-svc.yaml: Process exited with status 1
+stdout:
+
+stderr:
+E0404 14:37:17.999807   17383 request.go:1085] Unexpected error when reading response body: context deadline exceeded (Client.Timeout or context cancellation while reading body)
+error: unexpected error when reading response body. Please retry. Original error: context deadline exceeded (Client.Timeout or context cancellation while reading body)
+W0404 21:38:09.699065   64779 out.go:241] ❗  Enabling 'dashboard' returned an error: running callbacks: [sudo KUBECONFIG=/var/lib/minikube/kubeconfig /var/lib/minikube/binaries/v1.23.3/kubectl apply -f /etc/kubernetes/addons/dashboard-ns.yaml -f /etc/kubernetes/addons/dashboard-clusterrole.yaml -f /etc/kubernetes/addons/dashboard-clusterrolebinding.yaml -f /etc/kubernetes/addons/dashboard-configmap.yaml -f /etc/kubernetes/addons/dashboard-dp.yaml -f /etc/kubernetes/addons/dashboard-role.yaml -f /etc/kubernetes/addons/dashboard-rolebinding.yaml -f /etc/kubernetes/addons/dashboard-sa.yaml -f /etc/kubernetes/addons/dashboard-secret.yaml -f /etc/kubernetes/addons/dashboard-svc.yaml: Process exited with status 1
+stdout:
+
+stderr:
+E0404 14:37:17.999807   17383 request.go:1085] Unexpected error when reading response body: context deadline exceeded (Client.Timeout or context cancellation while reading body)
+error: unexpected error when reading response body. Please retry. Original error: context deadline exceeded (Client.Timeout or context cancellation while reading body)
+]
+I0404 21:38:09.691241   64779 ssh_runner.go:235] Completed: /bin/bash -c "sudo /var/lib/minikube/binaries/v1.23.3/kubectl --kubeconfig=/var/lib/minikube/kubeconfig -n kube-system get configmap coredns -o yaml": (2m13.796025191s)
+I0404 21:38:09.699546   64779 start.go:757] CoreDNS already contains "host.minikube.internal" host record, skipping...
+I0404 21:38:09.722604   64779 kapi.go:75] Waiting for pod with label "app.kubernetes.io/name=ingress-nginx" in ns "ingress-nginx" ...
+I0404 21:39:48.278154   64779 kapi.go:81] temporary error: getting Pods with label selector "app.kubernetes.io/name=ingress-nginx" : [Get "https://192.168.59.100:8443/api/v1/namespaces/ingress-nginx/pods?labelSelector=app.kubernetes.io%!F(MISSING)name%!D(MISSING)ingress-nginx": http2: client connection lost]
+I0404 21:39:48.290219   64779 retry.go:31] will retry after 462.318748ms: Get "https://192.168.59.100:8443/api/v1/nodes": http2: client connection lost
+I0404 21:39:58.773730   64779 retry.go:31] will retry after 890.117305ms: Get "https://192.168.59.100:8443/api/v1/nodes": net/http: TLS handshake timeout
+I0404 21:39:58.780681   64779 kapi.go:81] temporary error: getting Pods with label selector "app.kubernetes.io/name=ingress-nginx" : [Get "https://192.168.59.100:8443/api/v1/namespaces/ingress-nginx/pods?labelSelector=app.kubernetes.io%!F(MISSING)name%!D(MISSING)ingress-nginx": net/http: TLS handshake timeout]
+I0404 21:40:09.283437   64779 kapi.go:81] temporary error: getting Pods with label selector "app.kubernetes.io/name=ingress-nginx" : [Get "https://192.168.59.100:8443/api/v1/namespaces/ingress-nginx/pods?labelSelector=app.kubernetes.io%!F(MISSING)name%!D(MISSING)ingress-nginx": net/http: TLS handshake timeout]
+I0404 21:40:09.670502   64779 node_conditions.go:105] duration metric: took 1m59.975167632s to run NodePressure ...
+I0404 21:40:09.679453   64779 out.go:176] 
+W0404 21:40:09.679634   64779 out.go:241] ❌  Exiting due to GUEST_START: wait 6m0s for node: node pressure: list nodes retry: Get "https://192.168.59.100:8443/api/v1/nodes": net/http: TLS handshake timeout
+W0404 21:40:09.679655   64779 out.go:241] 
+W0404 21:40:09.694923   64779 out.go:241] [31m╭───────────────────────────────────────────────────────────────────────────────────────────╮[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    😿  If the above advice does not help, please let us know:                             [31m│[0m
+[31m│[0m    👉  https://github.com/kubernetes/minikube/issues/new/choose                           [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m│[0m    Please run `minikube logs --file=logs.txt` and attach logs.txt to the GitHub issue.    [31m│[0m
+[31m│[0m                                                                                           [31m│[0m
+[31m╰───────────────────────────────────────────────────────────────────────────────────────────╯[0m
+
+* 
+* ==> Docker <==
+* -- Journal begins at Mon 2022-04-04 14:28:47 UTC, ends at Mon 2022-04-04 14:41:50 UTC. --
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.060622710Z" level=error msg="copy shim log" error="read /proc/self/fd/395: file already closed"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.084620085Z" level=info msg="ignoring event" container=3bdde3fc28b9277d9528e79420eecae694840fac6e928aa61bcaab2c87d7c024 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.112507605Z" level=info msg="ignoring event" container=4d275ed87779267a23112d54f158f52a91267cfff68b3134b021eb475860649e module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.112552065Z" level=info msg="ignoring event" container=f0b671fb09a6acf7f09277171b3a666f449e99b798fc1c5cd5e610cdab58ba65 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.112568506Z" level=info msg="ignoring event" container=d0954db358a772f5d4a3fe8b9287d34bc7814c05cc977dccfd66e178ee8ca94d module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.125226522Z" level=info msg="shim disconnected" id=d0954db358a772f5d4a3fe8b9287d34bc7814c05cc977dccfd66e178ee8ca94d
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.125352204Z" level=error msg="copy shim log" error="read /proc/self/fd/420: file already closed"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.276234653Z" level=info msg="shim disconnected" id=4d275ed87779267a23112d54f158f52a91267cfff68b3134b021eb475860649e
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.276366076Z" level=error msg="copy shim log" error="read /proc/self/fd/351: file already closed"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.279321370Z" level=info msg="shim disconnected" id=f0b671fb09a6acf7f09277171b3a666f449e99b798fc1c5cd5e610cdab58ba65
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.279423776Z" level=error msg="copy shim log" error="read /proc/self/fd/408: file already closed"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.280004586Z" level=info msg="ignoring event" container=f37ee4a9deb3eca29ae3ecbde937dbcac44a497b17e675184f5c0060ed06230b module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.280048760Z" level=info msg="ignoring event" container=6bf6f9aeafcff714a4aec7632374f8f6de75f478448b9d192d246832427db4a8 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.280067704Z" level=info msg="ignoring event" container=b8b0cbbb091d86692cca75d50efd1ac00b9670d6457ef322d73cda93fd0ccdae module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.281136804Z" level=info msg="shim disconnected" id=3bdde3fc28b9277d9528e79420eecae694840fac6e928aa61bcaab2c87d7c024
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.281189229Z" level=error msg="copy shim log" error="read /proc/self/fd/428: file already closed"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.293956377Z" level=info msg="ignoring event" container=2e9473b494d1075fd7757c764952ec8a590b4c7e8bb3039e684b56ff4778c339 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.294000311Z" level=info msg="ignoring event" container=94243278d0db86e6a9804f5aa476076548f14cd688adf6db0f949fcce1a9d86d module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.294018239Z" level=info msg="ignoring event" container=4f456a41c2f4e790399d7a63c0fc36bfa3a0877fa745b72f6d38b87c411a7a3c module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.294158932Z" level=info msg="shim disconnected" id=4f456a41c2f4e790399d7a63c0fc36bfa3a0877fa745b72f6d38b87c411a7a3c
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.294576459Z" level=error msg="copy shim log" error="read /proc/self/fd/341: file already closed"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.294674118Z" level=info msg="shim disconnected" id=94243278d0db86e6a9804f5aa476076548f14cd688adf6db0f949fcce1a9d86d
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.294699772Z" level=error msg="copy shim log" error="read /proc/self/fd/415: file already closed"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.297104566Z" level=info msg="shim disconnected" id=2e9473b494d1075fd7757c764952ec8a590b4c7e8bb3039e684b56ff4778c339
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.297165340Z" level=error msg="copy shim log" error="read /proc/self/fd/404: file already closed"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.310015012Z" level=info msg="shim disconnected" id=b8b0cbbb091d86692cca75d50efd1ac00b9670d6457ef322d73cda93fd0ccdae
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.374260008Z" level=info msg="ignoring event" container=d83d4b9fec771b8b7ca1b733557b534346a194c27499ea9e813fa56b0782d5ea module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.334680725Z" level=error msg="copy shim log" error="read /proc/self/fd/382: file already closed"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.322900297Z" level=info msg="shim disconnected" id=f37ee4a9deb3eca29ae3ecbde937dbcac44a497b17e675184f5c0060ed06230b
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.375344764Z" level=error msg="copy shim log" error="read /proc/self/fd/424: file already closed"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.317374686Z" level=info msg="shim disconnected" id=6bf6f9aeafcff714a4aec7632374f8f6de75f478448b9d192d246832427db4a8
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.375464589Z" level=error msg="copy shim log" error="read /proc/self/fd/412: file already closed"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.377391267Z" level=info msg="shim disconnected" id=d83d4b9fec771b8b7ca1b733557b534346a194c27499ea9e813fa56b0782d5ea
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.377454856Z" level=error msg="copy shim log" error="read /proc/self/fd/398: file already closed"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.386836514Z" level=info msg="shim disconnected" id=cc19012e6b98c27219036be41d6f61bad161c1887ce03bd88d8dae7079240783
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.386897448Z" level=error msg="copy shim log" error="read /proc/self/fd/367: file already closed"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.388360210Z" level=info msg="ignoring event" container=cc19012e6b98c27219036be41d6f61bad161c1887ce03bd88d8dae7079240783 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.401962585Z" level=info msg="shim disconnected" id=2477f0d05319419f57188be9a8d5d8bdd6ab01137b7540dd271544dec110d18b
+Apr 04 14:35:46 minikube dockerd[13382]: time="2022-04-04T14:35:46.402018995Z" level=error msg="copy shim log" error="read /proc/self/fd/347: file already closed"
+Apr 04 14:35:46 minikube dockerd[2496]: time="2022-04-04T14:35:46.433891984Z" level=info msg="ignoring event" container=2477f0d05319419f57188be9a8d5d8bdd6ab01137b7540dd271544dec110d18b module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:48 minikube dockerd[13382]: time="2022-04-04T14:35:48.667174563Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/3010ab6fed8165694d084c2e938ca0d418f9c3225883ae8fa791b2a13333d3c7 pid=16991
+Apr 04 14:35:51 minikube dockerd[2496]: time="2022-04-04T14:35:51.041640802Z" level=info msg="ignoring event" container=3010ab6fed8165694d084c2e938ca0d418f9c3225883ae8fa791b2a13333d3c7 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:51 minikube dockerd[13382]: time="2022-04-04T14:35:51.047505044Z" level=info msg="shim disconnected" id=3010ab6fed8165694d084c2e938ca0d418f9c3225883ae8fa791b2a13333d3c7
+Apr 04 14:35:51 minikube dockerd[13382]: time="2022-04-04T14:35:51.048535584Z" level=error msg="copy shim log" error="read /proc/self/fd/328: file already closed"
+Apr 04 14:35:51 minikube dockerd[13382]: time="2022-04-04T14:35:51.244575689Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/541a1c3618373b6776bf0fa2431dfb9ef84ebc6e4a82f0b64f3acd8a854f5554 pid=17106
+Apr 04 14:35:53 minikube dockerd[13382]: time="2022-04-04T14:35:53.119049242Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/b94bfdd2571b0b9e13d51a623ea81e8aedd20d69a4964e68cfa7d1da5f64ef66 pid=17155
+Apr 04 14:35:53 minikube dockerd[13382]: time="2022-04-04T14:35:53.681683947Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/e8dc67566799351af31f07aef119bd9dabf54ba9c6f482e97bc29aa8401da909 pid=17182
+Apr 04 14:35:55 minikube dockerd[13382]: time="2022-04-04T14:35:55.832168460Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/e9ffea153f888f6cc6875c80e760f0efb9910b0d1a81d48c2d25f4641151074e pid=17245
+Apr 04 14:35:58 minikube dockerd[2496]: time="2022-04-04T14:35:58.840229054Z" level=info msg="ignoring event" container=a9c034b2a2afbdb6de5589049b5ad7b05cb36536dcf0b6fb023b4336c06c7250 module=libcontainerd namespace=moby topic=/tasks/delete type="*events.TaskDelete"
+Apr 04 14:35:58 minikube dockerd[13382]: time="2022-04-04T14:35:58.841269094Z" level=info msg="shim disconnected" id=a9c034b2a2afbdb6de5589049b5ad7b05cb36536dcf0b6fb023b4336c06c7250
+Apr 04 14:35:58 minikube dockerd[13382]: time="2022-04-04T14:35:58.841336285Z" level=error msg="copy shim log" error="read /proc/self/fd/384: file already closed"
+Apr 04 14:36:51 minikube dockerd[13382]: time="2022-04-04T14:36:51.854757126Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/3fbf1c7c88858f70e8d928393d75ba084ae3b76f8860026dfe76da7455dfaf8f pid=17497
+Apr 04 14:37:13 minikube dockerd[13382]: time="2022-04-04T14:37:13.341584618Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/1088b4ba008e9ca05c7d1c09ed42738b5af922819fe95fb1ef11eafafad2f4e7 pid=17587
+Apr 04 14:37:21 minikube dockerd[13382]: time="2022-04-04T14:37:21.448127215Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/aaf6aea2dc3e25971a66c288334a6583cbcb70dfccf2e7d68417e2a921b70229 pid=17643
+Apr 04 14:37:24 minikube dockerd[13382]: time="2022-04-04T14:37:24.499371301Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/3bf59fcc564be0afa00beb0522031a7ee9e76a5ad644de5eb567fbd7f6ed1256 pid=17693
+Apr 04 14:37:31 minikube dockerd[13382]: time="2022-04-04T14:37:31.011681939Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/04cfa0e9a2ea56d56ae28fb78241cb52ea013c6fc17ce8110ee52c85cf93f5aa pid=17761
+Apr 04 14:37:36 minikube dockerd[13382]: time="2022-04-04T14:37:36.113109022Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/9328b94cd49d5a8b59c9e93526b09909ba092cb7381a339ad166f3650dafe8ef pid=17836
+Apr 04 14:37:46 minikube dockerd[13382]: time="2022-04-04T14:37:46.420867092Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/3ba86b91a286ac50a2dd8e47b95eee369910384f968f4aabe4363d4a9b18ae47 pid=17913
+Apr 04 14:38:36 minikube dockerd[13382]: time="2022-04-04T14:38:36.122185290Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/1cc0aeb18fc7efe439fec439e32b17425e48ea9f1f0df421230a352669b85321 pid=18057
+Apr 04 14:40:15 minikube dockerd[13382]: time="2022-04-04T14:40:15.517451384Z" level=info msg="starting signal loop" namespace=moby path=/run/docker/containerd/daemon/io.containerd.runtime.v2.task/moby/e9fb0bbd07361399de875c5edd0b4d87f1c0c1fb2eb74c2b832235a0e417fe15 pid=18173
+
+* 
+* ==> container status <==

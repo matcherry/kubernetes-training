@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs
+  labels:
+    name: nodejs
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: nodejs
+  template:
+    metadata:
+      name: nodejs
+      labels:
+        name: nodejs
+    spec:
+      containers:
+        - name: nodejs
+          image: alpine:latest
+          command: [ "/bin/sh", "-c", "--" ]
+          args: [ "while true; do sleep 30; done;" ]
+          ports:
+            - containerPort: 3000
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodejs-service
+spec:
+  type: NodePort
+  selector:
+    name: nodejs
+  ports:
+    - port: 3000
+      targetPort: 3000
+      nodePort: 30002
